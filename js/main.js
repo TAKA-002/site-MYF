@@ -26,17 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/js/main.js */ \"./src/modules/js/main.js\");\n/* harmony import */ var _modules_css_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/css/style.scss */ \"./src/modules/css/style.scss\");\n/*=============================================================================\njavascriptのモジュール\n=============================================================================*/\n\n(0,_modules_js_main_js__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n/*=============================================================================\ncssのモジュール\n=============================================================================*/\n\n\n\n\n//# sourceURL=webpack://site-monphy/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/js/common/common_parts.js */ \"./src/modules/js/common/common_parts.js\");\n/* harmony import */ var _modules_css_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/css/style.scss */ \"./src/modules/css/style.scss\");\n/*=============================================================================\njavascriptのモジュール\n=============================================================================*/\n//テスト\n//import dev from \"./modules/js/main.js\";\n//dev();\n\n//共通部分の呼び出し\n\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.header();\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.footer();\n\n/*=============================================================================\ncssのモジュール\n=============================================================================*/\n\n\n\n\n//# sourceURL=webpack://site-monphy/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/modules/js/main.js":
-/*!********************************!*\
-  !*** ./src/modules/js/main.js ***!
-  \********************************/
+/***/ "./src/modules/js/common/common_parts.js":
+/*!***********************************************!*\
+  !*** ./src/modules/js/common/common_parts.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {\n  console.log(\"テスト\");\n}\n\n\n//# sourceURL=webpack://site-monphy/./src/modules/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"header\": () => (/* binding */ header),\n/* harmony export */   \"footer\": () => (/* binding */ footer)\n/* harmony export */ });\n//==================================================\n//ヘッダーの共通部分を呼び出す\n//==================================================\n\n//=============\n//ヘッダー\n//=============\nfunction header() {\n  $.ajax({\n    url: \"includes/mod_header.html\",\n    cache: false,\n    dataType: \"html\",\n    success: function (data) {\n      $(\"#header\").html(data);\n    },\n    // error: function (data) {\n    //   $(\"#header\").text(\"えらー\");\n    // },\n  });\n}\n\n//=============\n//フッダー\n//=============\nfunction footer() {\n  $.ajax({\n    url: \"includes/mod_footer.html\",\n    cache: false,\n    dataType: \"html\",\n    success: function (data) {\n      $(\"#footer\").html(data);\n    },\n    // error: function (data) {\n    //   $(\"#footer\").text(\"えらー\");\n    // },\n  });\n}\n\n\n//# sourceURL=webpack://site-monphy/./src/modules/js/common/common_parts.js?");
 
 /***/ })
 
