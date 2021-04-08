@@ -1,5 +1,7 @@
 const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+// SCSSファイルのコンパイルはgulpでやるので一旦コメントアウト
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -8,23 +10,24 @@ module.exports = {
     filename: "main.js",
   },
 
-  module: {
-    rules: [
-      {
-        test: /\.(css|sass|scss)/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
-            loader: "css-loader",
-          },
-          {
-            loader: "sass-loader",
-          },
-        ],
-      },
-    ],
-  },
-  plugins: [new MiniCssExtractPlugin({ filename: "../css/style.css" })],
+  // SCSSファイルのコンパイルはgulpでやるので一旦コメントアウト
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.(css|sass|scss)/,
+  //       use: [
+  //         {
+  //           loader: MiniCssExtractPlugin.loader,
+  //         },
+  //         {
+  //           loader: "css-loader",
+  //         },
+  //         {
+  //           loader: "sass-loader",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // plugins: [new MiniCssExtractPlugin({ filename: "../css/style.css" })],
 };

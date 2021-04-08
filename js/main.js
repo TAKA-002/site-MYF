@@ -10,23 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/modules/css/style.scss":
-/*!************************************!*\
-  !*** ./src/modules/css/style.scss ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://site-monphy/./src/modules/css/style.scss?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/js/common/common_parts.js */ \"./src/modules/js/common/common_parts.js\");\n/* harmony import */ var _modules_css_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/css/style.scss */ \"./src/modules/css/style.scss\");\n/*=============================================================================\njavascriptのモジュール\n=============================================================================*/\n//テスト\n//import dev from \"./modules/js/main.js\";\n//dev();\n\n//共通部分の呼び出し\n\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.header();\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.footer();\n\n/*=============================================================================\ncssのモジュール\n=============================================================================*/\n\n\n\n\n//# sourceURL=webpack://site-monphy/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/js/common/common_parts.js */ \"./src/modules/js/common/common_parts.js\");\n/*=============================================================================\njavascriptのモジュール\n=============================================================================*/\n//テスト\n//import dev from \"./modules/js/main.js\";\n//dev();\n\n//共通部分の呼び出し\n\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.header();\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.footer();\n\n/*=============================================================================\ncssのモジュール（scssはgulpでコンパイルのためコメントアウト）\n=============================================================================*/\n\n// import \"./modules/css/style.scss\";\n\n\n//# sourceURL=webpack://site-monphy/./src/index.js?");
 
 /***/ }),
 
