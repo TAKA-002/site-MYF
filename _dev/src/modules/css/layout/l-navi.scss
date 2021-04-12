@@ -1,0 +1,20 @@
+.l-navi {
+  display: flex;
+  justify-content: space-between;
+  width: 548px;
+  background-color: aquamarine;
+
+  &__item {
+    font-size: 1.8rem;
+  }
+
+  &__link {
+    display: block;
+
+    &::before {
+      background: url("/site-MYF/images/common/icon_about-us.png") no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
