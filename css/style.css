@@ -5,7 +5,7 @@ html {
 .l-header {
   width: 100%;
   height: 90px;
-  background-color: aqua;
+  background-color: #288f4d;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -23,7 +23,6 @@ html {
   display: flex;
   justify-content: space-between;
   width: 548px;
-  background-color: aquamarine;
 }
 
 .l-navi__item {
@@ -31,11 +30,52 @@ html {
 }
 
 .l-navi__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
 }
 
-.l-navi__link::before {
-  background: url("/site-MYF/images/common/icon_about-us.png") no-repeat;
-  background-position: center;
+.l-navi .icon--about-us::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/common/icon_about-us.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+  background-size: contain;
+}
+
+.l-navi .icon--project::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/common/icon_project.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+  background-size: contain;
+}
+
+.l-navi .icon--blog::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/common/icon_blog.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+  background-size: contain;
+}
+
+.l-navi .icon--donate::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/common/icon_donate.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
   background-size: contain;
 }

@@ -2,19 +2,66 @@
   display: flex;
   justify-content: space-between;
   width: 548px;
-  background-color: aquamarine;
 
   &__item {
     font-size: 1.8rem;
   }
 
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
 
-    &::before {
-      background: url("/site-MYF/images/common/icon_about-us.png") no-repeat;
-      background-position: center;
-      background-size: contain;
+  .icon {
+    &--about-us {
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/common/icon_about-us.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+        background-size: contain;
+      }
+    }
+    &--project {
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/common/icon_project.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+        background-size: contain;
+      }
+    }
+    &--blog {
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/common/icon_blog.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+        background-size: contain;
+      }
+    }
+    &--donate {
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url("../images/common/icon_donate.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+        background-size: contain;
+      }
     }
   }
 }
