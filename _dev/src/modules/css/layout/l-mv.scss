@@ -1,11 +1,11 @@
 .mv {
   position: relative;
   width: 100%;
-  &-l {
+  &--under-layer {
     position: relative;
     z-index: 1;
   }
-  &-a {
+  &--upper-layer {
     position: absolute;
     top: 0;
     z-index: 2;
@@ -16,7 +16,7 @@
   }
 }
 
-.main_imgBox--under {
+.main_imgBox--under-layer {
   height: 540px;
   overflow: hidden;
   position: relative;
@@ -69,7 +69,7 @@
   }
 }
 
-.main_imgBox--up {
+.main_imgBox--upper-layer {
   height: 540px;
   // overflow: hidden;
   position: relative;
