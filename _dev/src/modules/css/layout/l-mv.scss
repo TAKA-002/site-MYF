@@ -1,10 +1,18 @@
 .mv {
   position: relative;
+  width: 100%;
   &-l {
     position: relative;
+    z-index: 1;
   }
   &-a {
     position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 960px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 
@@ -63,7 +71,7 @@
 
 .main_imgBox--up {
   height: 540px;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
 
   .main_imgM {
@@ -71,11 +79,12 @@
     width: 960px;
     height: 100%;
     object-fit: cover;
+    background-repeat: no-repeat;
     position: absolute;
     left: 0;
     top: 0;
-    -webkit-animation: anime 24s 0s infinite;
-    animation: anime 24s 0s infinite;
+    -webkit-animation: animeNoscale 24s 0s infinite;
+    animation: animeNoscale 24s 0s infinite;
     // -webkit-animation: anime 36s 0s infinite;
     // animation: anime 36s 0s infinite;
 
@@ -149,6 +158,43 @@
   25% {
     opacity: 0;
     -webkit-transform: scale(1.2);
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes animeNoscale {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes animeNoscale {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
     z-index: 9;
   }
   100% {
