@@ -2,6 +2,7 @@
 const gulp = require("gulp");
 // Sassをコンパイルするプラグインの読み込み
 const sass = require("gulp-sass");
+var sourcemaps = require("gulp-sourcemaps");
 
 // style.scssをタスクを作成する
 gulp.task("default", function () {
@@ -15,6 +16,7 @@ gulp.task("default", function () {
       gulp
         // 全scssファイルを取りまとめたstyle.scssファイルを対象にして取得
         .src("./src/modules/css/style.scss")
+        .pipe(sourcemaps.init())
         // Sassのコンパイルを実行
         .pipe(
           sass({
@@ -24,6 +26,8 @@ gulp.task("default", function () {
             // これがないと自動的に止まってしまう
             .on("error", sass.logError)
         )
+        // mapファイルを作成
+        .pipe(sourcemaps.write("../css"))
         // cssフォルダー以下に出力
         .pipe(gulp.dest("../css"))
     );

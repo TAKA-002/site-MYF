@@ -1,10 +1,18 @@
-@import "foundation/base.scss";
-@import "foundation/variables.scss";
-@import "foundation/media.scss";
+// googleフォント
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 // ---------------------------------------------
 
-@import "layout/l-mv.scss";
-@import "layout/l-main.scss";
-@import "layout/l-header.scss";
-@import "layout/l-navi.scss";
+@import "foundation/_base";
+@import "foundation/_color";
+@import "foundation/_variables";
+@import "foundation/_media";
+
+// ---------------------------------------------
+
+@import "layout/_l-section";
+@import "layout/_l-mv";
+@import "layout/_l-main";
+@import "layout/_l-header";
+@import "layout/_l-navi";
+@import "layout/_l-news";
