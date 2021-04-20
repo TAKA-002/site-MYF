@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <!-- facebook 埋め込み用のスクリプト -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v10.0" nonce="28HWtMdx"></script>
+
     <!-- #headerに共通部分は別ファイルで呼び出す -->
     <header id="header" class="container"></header>
 
@@ -37,16 +41,102 @@
     </div>
 
     <!-- NEWS ニュース -->
-    <section>
-      <h2>NEWS<span>お知らせ</span></h2>
+    <section class="news l-section">
+      <h2 class="l-section__title">NEWS<br /><span class="l-section__title-ja">お知らせ</span></h2>
 
-      <div>
-        <div>
-          <div>ニュースの部分</div>
-          <p>一覧を見る</p>
-          <button>スタッフブログ</button>
+      <div class="l-section--wrap news--wrap">
+        <div class="news__list--wrap">
+          <ul class="news__list">
+            <!-- list -start- -->
+            <li class="news__list__item">
+              <a href="#">
+                <div class="news__list__date">
+                  <time>2021.04.20</time>
+                  <!-- もしもアイコンをつけるならこのPタグを設置し、「news__list__date」のマージンを調整する
+                    <p class="news__item">お知らせ</p> -->
+                </div>
+                <p>サイトリニューアルしました。</p>
+                <span class="arrow"></span>
+              </a>
+            </li>
+            <!-- list -end- -->
+            <!-- list -start- -->
+            <li class="news__list__item">
+              <a href="#">
+                <div class="news__list__date">
+                  <time>2021.04.20</time>
+                  <!-- もしもアイコンをつけるならこのPタグを設置し、「news__list__date」のマージンを調整する
+                    <p class="news__item">お知らせ</p> -->
+                </div>
+                <p>サイトリニューアルしました。</p>
+                <span class="arrow"></span>
+              </a>
+            </li>
+            <!-- list -end- -->
+            <!-- list -start- -->
+            <li class="news__list__item">
+              <a href="#">
+                <div class="news__list__date">
+                  <time>2021.04.20</time>
+                  <!-- もしもアイコンをつけるならこのPタグを設置し、「news__list__date」のマージンを調整する
+                    <p class="news__item">お知らせ</p> -->
+                </div>
+                <p>サイトリニューアルしました。</p>
+                <span class="arrow"></span>
+              </a>
+            </li>
+            <!-- list -end- -->
+            <!-- list -start- -->
+            <li class="news__list__item">
+              <a href="#">
+                <div class="news__list__date">
+                  <time>2021.04.20</time>
+                  <!-- もしもアイコンをつけるならこのPタグを設置し、「news__list__date」のマージンを調整する
+                    <p class="news__item">お知らせ</p> -->
+                </div>
+                <p>サイトリニューアルしました。</p>
+                <span class="arrow"></span>
+              </a>
+            </li>
+            <!-- list -end- -->
+            <!-- list -start- -->
+            <li class="news__list__item">
+              <a href="#">
+                <div class="news__list__date">
+                  <time>2021.04.20</time>
+                  <!-- もしもアイコンをつけるならこのPタグを設置し、「news__list__date」のマージンを調整する
+                    <p class="news__item">お知らせ</p> -->
+                </div>
+                <p>サイトリニューアルしました。サイトリニューアルしました。サイトリニューアルしました。</p>
+                <span class="arrow"></span>
+              </a>
+            </li>
+            <!-- list -end- -->
+          </ul>
+
+          <button class="btn">
+            <a href="#"><img src="./images/common/btn-blog.png" alt="" /></a>
+          </button>
         </div>
-        <div>facebookエリア</div>
+
+        <!-- facebook 埋め込み -->
+        <div class="l-fb">
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/monphy.gh.ngo/"
+            data-tabs="timeline"
+            data-width="500"
+            data-height="400"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          >
+            <blockquote cite="https://www.facebook.com/monphy.gh.ngo/" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/monphy.gh.ngo/">Monphy &amp; Youth Foundation NGO マンフィーと青年基金</a>
+            </blockquote>
+          </div>
+        </div>
       </div>
     </section>
 
