@@ -10,7 +10,6 @@ body {
 
 .l-section {
   width: 100%;
-  background: #e5f1e3;
   padding-bottom: 40px;
 }
 
@@ -30,6 +29,10 @@ body {
 
 .l-section__title-ja {
   font-size: 2.4rem;
+}
+
+.bg-green {
+  background: #e5f1e3;
 }
 
 .mv {
