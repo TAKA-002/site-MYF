@@ -1,0 +1,18 @@
+.about {
+  &__figure {
+    &--wrap {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    &--wrap {
+      margin: 0 auto;
+      padding: 30px 0 42px;
+      width: 590px;
+    }
+  }
+}

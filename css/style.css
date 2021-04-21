@@ -366,4 +366,84 @@ body {
   text-align: center;
 }
 
+.about__figure--wrap {
+  text-align: center;
+}
+
+.about__description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.about__description--wrap {
+  margin: 0 auto;
+  padding: 30px 0 42px;
+  width: 590px;
+}
+
+.o-card {
+  display: flex;
+}
+
+.o-card--wrap {
+  margin: 0 auto;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.o-card--wrap:last-child {
+  margin-right: 0;
+}
+
+.o-card--wrap:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s;
+}
+
+.o-card__item {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.o-card__img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.o-card__content {
+  padding: 15px 20px 20px;
+}
+
+.o-card__title {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.o-card__text {
+  color: #777;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.o-card__btn {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+
+.o-card__btn span {
+  text-decoration: none;
+  color: #4f96f6;
+  margin: 0 10px;
+}
+
+.o-card__btn span:hover {
+  color: #6bb6ff;
+}
+
 /*# sourceMappingURL=style.css.map */

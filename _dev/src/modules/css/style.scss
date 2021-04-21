@@ -3,16 +3,21 @@
 
 // ---------------------------------------------
 
-@import "foundation/_base";
-@import "foundation/_color";
-@import "foundation/_variables";
-@import "foundation/_media";
+@import "foundation/base";
+@import "foundation/color";
+@import "foundation/variables";
+@import "foundation/media";
 
 // ---------------------------------------------
 
-@import "layout/_l-section";
-@import "layout/_l-mv";
-@import "layout/_l-main";
-@import "layout/_l-header";
-@import "layout/_l-navi";
-@import "layout/_l-news";
+@import "layout/l-section";
+@import "layout/l-mv";
+@import "layout/l-main";
+@import "layout/l-header";
+@import "layout/l-navi";
+@import "layout/l-news";
+@import "layout/l-about";
+
+// ---------------------------------------------
+
+@import "object/o-card";
