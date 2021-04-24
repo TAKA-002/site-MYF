@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>マンフィーと青年基金NGO</title>
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
   </head>
 
   <body>
@@ -60,6 +62,7 @@
               </a>
             </li>
             <!-- list -end- -->
+
             <!-- list -start- -->
             <li class="news__list__item">
               <a href="#">
@@ -73,6 +76,7 @@
               </a>
             </li>
             <!-- list -end- -->
+
             <!-- list -start- -->
             <li class="news__list__item">
               <a href="#">
@@ -86,6 +90,7 @@
               </a>
             </li>
             <!-- list -end- -->
+
             <!-- list -start- -->
             <li class="news__list__item">
               <a href="#">
@@ -99,6 +104,7 @@
               </a>
             </li>
             <!-- list -end- -->
+
             <!-- list -start- -->
             <li class="news__list__item">
               <a href="#">
@@ -107,16 +113,18 @@
                   <!-- もしもアイコンをつけるならこのPタグを設置し、「news__list__date」のマージンを調整する
                     <p class="news__item">お知らせ</p> -->
                 </div>
-                <p>サイトリニューアルしました。サイトリニューアルしました。サイトリニューアルしました。</p>
+                <p>サイトリニューアルしました。</p>
                 <span class="arrow"></span>
               </a>
             </li>
             <!-- list -end- -->
           </ul>
 
-          <button class="btn">
-            <a href="#"><img src="./images/top/btn-blog.png" alt="" /></a>
-          </button>
+          <div class="btn--wrap">
+            <button class="btn">
+              <a href="#"><img class="btn__img" src="./images/top/btn-blog.png" alt="" /></a>
+            </button>
+          </div>
         </div>
 
         <!-- facebook 埋め込み -->
@@ -163,12 +171,13 @@
                   <p class="o-card__title">代表者メッセージ</p>
                   <p class="o-card__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
                 </div>
-                <div class="o-card__btn">
-                  <span>READ MORE</span>
+                <div class="o-card__btn btn__icon-message">
+                  <span class="o-card__btn-text">READ MORE</span>
                 </div>
               </div>
             </a>
           </div>
+
           <!-- 団体概要 -->
           <div class="o-card--wrap">
             <a href="">
@@ -178,12 +187,13 @@
                   <p class="o-card__title">団体概要</p>
                   <p class="o-card__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
                 </div>
-                <div class="o-card__btn">
-                  <span>READ MORE</span>
+                <div class="o-card__btn btn__icon-overview">
+                  <span class="o-card__btn-text">READ MORE</span>
                 </div>
               </div>
             </a>
           </div>
+
           <!-- スタッフ紹介 -->
           <div class="o-card--wrap">
             <a href="">
@@ -193,12 +203,13 @@
                   <p class="o-card__title">スタッフ紹介</p>
                   <p class="o-card__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
                 </div>
-                <div class="o-card__btn">
-                  <span>READ MORE</span>
+                <div class="o-card__btn btn__icon-staff">
+                  <span class="o-card__btn-text">READ MORE</span>
                 </div>
               </div>
             </a>
           </div>
+
           <!-- よくある質問 -->
           <div class="o-card--wrap">
             <a href="#">
@@ -208,21 +219,140 @@
                   <p class="o-card__title">よくある質問</p>
                   <p class="o-card__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
                 </div>
-                <div class="o-card__btn">
-                  <span>READ MORE</span>
+                <div class="o-card__btn btn__icon-ques">
+                  <span class="o-card__btn-text">READ MORE</span>
                 </div>
               </div>
             </a>
           </div>
         </div>
+
+        <div class="btn--wrap">
+          <button class="btn">
+            <a href="#"><img class="btn__img" src="./images/top/btn-more.png" alt="" /></a>
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- PROJECT 活動内容 -->
-    <section></section>
+    <section class="project l-section bg-green">
+      <h2 class="l-section__title">Project<br /><span class="l-section__title-ja">活動内容</span></h2>
+
+      <div class="l-section--wrap">
+        <div class="project__description--wrap">
+          <p class="project__description">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+        </div>
+
+        <div class="o-card">
+          <!-- 学校建設 -->
+          <div class="o-card--wrap">
+            <a href="">
+              <div class="o-card__item">
+                <img class="o-card__img" src="./images/top/representative.jpg" alt="" />
+                <div class="o-card__content">
+                  <p class="o-card__title">学校建設</p>
+                  <p class="o-card__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+                </div>
+                <div class="o-card__btn btn__icon-school">
+                  <span class="o-card__btn-text">READ MORE</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 井戸作成 -->
+          <div class="o-card--wrap">
+            <a href="">
+              <div class="o-card__item">
+                <img class="o-card__img" src="http://placehold.jp/640x360.png" alt="" />
+                <div class="o-card__content">
+                  <p class="o-card__title">井戸作成</p>
+                  <p class="o-card__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+                </div>
+                <div class="o-card__btn btn__icon-well">
+                  <span class="o-card__btn-text">READ MORE</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 支援物資提供 -->
+          <div class="o-card--wrap">
+            <a href="">
+              <div class="o-card__item">
+                <img class="o-card__img" src="http://placehold.jp/640x360.png" alt="" />
+                <div class="o-card__content">
+                  <p class="o-card__title">支援物資提供</p>
+                  <p class="o-card__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+                </div>
+                <div class="o-card__btn btn__icon-support">
+                  <span class="o-card__btn-text">READ MORE</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 募金活動 -->
+          <div class="o-card--wrap">
+            <a href="#">
+              <div class="o-card__item">
+                <img class="o-card__img" src="http://placehold.jp/640x360.png" alt="" />
+                <div class="o-card__content">
+                  <p class="o-card__title">募金活動</p>
+                  <p class="o-card__text">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+                </div>
+                <div class="o-card__btn btn__icon-donate">
+                  <span class="o-card__btn-text">READ MORE</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="btn--wrap">
+          <button class="btn">
+            <a href="#"><img class="btn__img" src="./images/top/btn-more.png" alt="" /></a>
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- DONATE ご寄付について -->
-    <section></section>
+    <section class="donate l-section">
+      <h2 class="l-section__title">Donate<br /><span class="l-section__title-ja">ご寄付について</span></h2>
+
+      <div class="donate--wrap l-section--wrap">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-item">
+              <img src="http://placehold.jp/640x360.png" width="385px" alt="" />
+            </div>
+            <div class="swiper-slide slide-item">
+              <img src="http://placehold.jp/640x360.png" width="385px" alt="" />
+            </div>
+            <div class="swiper-slide slide-item">
+              <img src="http://placehold.jp/640x360.png" width="385px" alt="" />
+            </div>
+            <div class="swiper-slide slide-item">
+              <img src="http://placehold.jp/640x360.png" width="385px" alt="" />
+            </div>
+            <div class="swiper-slide slide-item">
+              <img src="http://placehold.jp/640x360.png" width="385px" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="donate__description--wrap">
+          <p class="donate__description">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+          <div class="btn--wrap">
+            <button class="btn">
+              <a href="#"><img class="btn__img" src="./images/top/btn-more.png" alt="" /></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- #footerに共通部分は別ファイルで呼び出す -->
     <footer id="footer"></footer>

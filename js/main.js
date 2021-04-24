@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/js/common/common_parts.js */ \"./src/modules/js/common/common_parts.js\");\n/*=============================================================================\njavascriptのモジュール\n=============================================================================*/\n//テスト\n//import dev from \"./modules/js/main.js\";\n//dev();\n\n//共通部分の呼び出し\n\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.header();\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.footer();\n\n/*=============================================================================\ncssのモジュール（scssはgulpでコンパイルのためコメントアウト）\n=============================================================================*/\n\n// import \"./modules/css/style.scss\";\n\n\n//# sourceURL=webpack://site-monphy/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/js/common/common_parts.js */ \"./src/modules/js/common/common_parts.js\");\n/* harmony import */ var _modules_js_plugin_config_swiper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/js/plugin/config_swiper.js */ \"./src/modules/js/plugin/config_swiper.js\");\n/*=============================================================================\njavascriptのモジュール\n=============================================================================*/\n//テスト\n//import dev from \"./modules/js/main.js\";\n//dev();\n\n//共通部分の呼び出し\n\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.header();\n_modules_js_common_common_parts_js__WEBPACK_IMPORTED_MODULE_0__.footer();\n\n\n\n/*=============================================================================\ncssのモジュール（scssはgulpでコンパイルのためコメントアウト）\n=============================================================================*/\n\n// import \"./modules/css/style.scss\";\n\n\n//# sourceURL=webpack://site-monphy/./src/index.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"header\": () => (/* binding */ header),\n/* harmony export */   \"footer\": () => (/* binding */ footer)\n/* harmony export */ });\n//==================================================\n//ヘッダーの共通部分を呼び出す\n//==================================================\n\n//=============\n//ヘッダー\n//=============\nfunction header() {\n  $.ajax({\n    url: \"includes/mod_header.html\",\n    cache: false,\n    dataType: \"html\",\n    success: function (data) {\n      $(\"#header\").html(data);\n    },\n    // error: function (data) {\n    //   $(\"#header\").text(\"えらー\");\n    // },\n  });\n}\n\n//=============\n//フッダー\n//=============\nfunction footer() {\n  $.ajax({\n    url: \"includes/mod_footer.html\",\n    cache: false,\n    dataType: \"html\",\n    success: function (data) {\n      $(\"#footer\").html(data);\n    },\n    // error: function (data) {\n    //   $(\"#footer\").text(\"えらー\");\n    // },\n  });\n}\n\n\n//# sourceURL=webpack://site-monphy/./src/modules/js/common/common_parts.js?");
+
+/***/ }),
+
+/***/ "./src/modules/js/plugin/config_swiper.js":
+/*!************************************************!*\
+  !*** ./src/modules/js/plugin/config_swiper.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"mySwiper\": () => (/* binding */ mySwiper)\n/* harmony export */ });\nvar mySwiper = new Swiper(\".swiper-container\", {\n  autoplay: {\n    delay: 0,\n  },\n  loop: true,\n  speed: 10000,\n});\n\n\n//# sourceURL=webpack://site-monphy/./src/modules/js/plugin/config_swiper.js?");
 
 /***/ })
 

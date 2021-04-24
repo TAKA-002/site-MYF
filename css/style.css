@@ -16,6 +16,7 @@ body {
 .l-section--wrap {
   width: 960px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .l-section__title {
@@ -23,7 +24,7 @@ body {
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
-  padding: 40px 0 30px;
+  padding: 40px 0 20px;
   line-height: 3rem;
 }
 
@@ -294,7 +295,6 @@ body {
 .news--wrap {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
 }
 
 .news__list {
@@ -362,12 +362,9 @@ body {
   width: 350px;
 }
 
-.btn {
-  text-align: center;
-}
-
 .about__figure--wrap {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .about__description {
@@ -377,12 +374,43 @@ body {
 
 .about__description--wrap {
   margin: 0 auto;
-  padding: 30px 0 42px;
+  padding: 0 0 42px;
   width: 590px;
+}
+
+.project__description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.project__description--wrap {
+  margin: 0 auto;
+  padding: 0 0 42px;
+  width: 590px;
+}
+
+.donate--wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.donate__description {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.donate__description--wrap {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .o-card {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .o-card--wrap {
@@ -433,17 +461,148 @@ body {
 .o-card__btn {
   text-align: center;
   border-top: 1px solid #eee;
-  padding: 20px;
+  padding: 5px 20px;
 }
 
-.o-card__btn span {
+.o-card__btn-text {
   text-decoration: none;
   color: #4f96f6;
   margin: 0 10px;
 }
 
-.o-card__btn span:hover {
+.o-card__btn-text:hover {
   color: #6bb6ff;
+}
+
+.btn__icon-message::after {
+  content: "";
+  background-image: url(../images/top/icon_construct.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.btn__icon-overview::after {
+  content: "";
+  background-image: url(../images/top/icon_water.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.btn__icon-staff::after {
+  content: "";
+  background-image: url(../images/top/icon_delivery.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.btn__icon-ques::after {
+  content: "";
+  background-image: url(../images/top/icon_piano.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.btn__icon-school::after {
+  content: "";
+  background-image: url(../images/top/icon_school.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.btn__icon-well::after {
+  content: "";
+  background-image: url(../images/top/icon_well.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.btn__icon-support::after {
+  content: "";
+  background-image: url(../images/top/icon_note.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.btn__icon-donate::after {
+  content: "";
+  background-image: url(../images/top/icon_donate.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.btn--wrap {
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s;
+}
+
+.btn__img {
+  width: 440px;
+  height: 100px;
+}
+
+.slide-item {
+  width: 300px;
+  height: 200px;
+  background: #000;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.slide-item:nth-child(2n) {
+  background: #fafafa;
+  color: #222;
+}
+
+.swiper-container {
+  width: 385px;
+  height: 216px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
