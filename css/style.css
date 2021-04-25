@@ -408,6 +408,69 @@ body {
   justify-content: space-between;
 }
 
+.footer__img {
+  height: 400px;
+  background-image: url(../images/common/footer_img.png);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.footer__info--wrap {
+  background-color: #288f4d;
+}
+
+.footer__info--group {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer__info--group p {
+  line-height: 1.6;
+}
+
+.footer__info--group span {
+  line-height: 1.2;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.footer__SNS--link {
+  display: flex;
+}
+
+.footer__SNS--icon {
+  margin: 0 15px 0 0;
+  color: #fff;
+}
+
+.footer__SNS--icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s;
+}
+
+.footer__SNS--icon:last-child {
+  margin: 0;
+}
+
+.footer__copy--wrap {
+  background-color: #422f0f;
+  padding: 20px 0;
+}
+
+.footer__copy--text {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
 .o-card {
   display: flex;
   margin-bottom: 40px;

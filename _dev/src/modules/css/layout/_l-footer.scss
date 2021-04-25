@@ -1,0 +1,67 @@
+.footer {
+  &__img {
+    height: 400px;
+    background-image: url(../images/common/footer_img.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    &--wrap {
+      background-color: $bgColorGreen;
+    }
+
+    &--group {
+      color: $cWhite;
+      font-size: 14px;
+
+      p {
+        line-height: 1.6;
+      }
+
+      span {
+        line-height: 1.2;
+        font-size: 26px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__SNS {
+    &--link {
+      display: flex;
+    }
+    &--icon {
+      margin: 0 15px 0 0;
+      color: $cWhite;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+        transition: all 0.5s;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &__copy {
+    &--wrap {
+      background-color: $bgColorBrown;
+      padding: 20px 0;
+    }
+
+    &--text {
+      color: $cWhite;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}
