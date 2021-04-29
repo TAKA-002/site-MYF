@@ -1,10 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-html {
-  font-size: 10px;
-}
-
+html,
 body {
+  font-size: 10px;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -50,6 +51,17 @@ body {
   line-height: 3rem;
 }
 
+@media (max-width: 600px) {
+  .l-section__title--about {
+    color: #288f4d;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 40px 0 20px;
+    line-height: 3rem;
+  }
+}
+
 .l-section__title--project {
   color: #288f4d;
   text-align: center;
@@ -59,6 +71,17 @@ body {
   line-height: 3rem;
 }
 
+@media (max-width: 600px) {
+  .l-section__title--project {
+    color: #288f4d;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 40px 0 20px;
+    line-height: 3rem;
+  }
+}
+
 .l-section__title--donate {
   color: #288f4d;
   text-align: center;
@@ -66,10 +89,22 @@ body {
   font-weight: bold;
   padding: 40px 0 20px;
   line-height: 3rem;
+  color: #288f4d;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 40px 0 20px;
+  line-height: 3rem;
 }
 
 .l-section__title-ja {
   font-size: 2.4rem;
+}
+
+@media (max-width: 600px) {
+  .l-section__title-ja {
+    font-size: 2rem;
+  }
 }
 
 .bg-green {
@@ -672,7 +707,8 @@ body {
 
 @media (max-width: 600px) {
   .o-card {
-    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
   }
 }
 
@@ -680,6 +716,19 @@ body {
   margin: 0 auto;
   width: 100%;
   margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .o-card--wrap {
+    width: 47%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .o-card--wrap:nth-of-type(2n) {
+    margin-left: auto;
+  }
 }
 
 .o-card--wrap:last-child {
@@ -715,16 +764,34 @@ body {
   margin-bottom: 12px;
 }
 
+@media (max-width: 600px) {
+  .o-card__title {
+    font-size: 1.3rem;
+  }
+}
+
 .o-card__text {
   color: #777;
   font-size: 1.4rem;
   line-height: 1.4;
 }
 
+@media (max-width: 600px) {
+  .o-card__text {
+    font-size: 1.2rem;
+  }
+}
+
 .o-card__btn {
   text-align: center;
   border-top: 1px solid #eee;
   padding: 5px 20px;
+}
+
+@media (max-width: 600px) {
+  .o-card__btn {
+    padding: 5px;
+  }
 }
 
 .o-card__btn-text {

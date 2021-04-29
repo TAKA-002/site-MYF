@@ -3,13 +3,25 @@
   margin-bottom: 40px;
 
   @include sp {
-    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
   }
 
   &--wrap {
     margin: 0 auto;
     width: 100%;
     margin-right: 20px;
+
+    @include sp {
+      width: 47%;
+      margin: 0 0 20px 0;
+    }
+
+    &:nth-of-type(2n) {
+      @include sp {
+        margin-left: auto;
+      }
+    }
 
     &:last-child {
       margin-right: 0;
@@ -43,18 +55,30 @@
     color: #333;
     font-weight: 700;
     margin-bottom: 12px;
+
+    @include sp {
+      font-size: 1.3rem;
+    }
   }
 
   &__text {
     color: #777;
     font-size: 1.4rem;
     line-height: 1.4;
+
+    @include sp {
+      font-size: 1.2rem;
+    }
   }
 
   &__btn {
     text-align: center;
     border-top: 1px solid #eee;
     padding: 5px 20px;
+
+    @include sp {
+      padding: 5px;
+    }
 
     &-text {
       text-decoration: none;
