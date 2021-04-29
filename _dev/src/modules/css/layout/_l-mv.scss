@@ -2,9 +2,18 @@
   background-color: $bgColor;
   position: relative;
   width: 100%;
+
+  @include sp {
+    height: 250px;
+  }
+
   &--under-layer {
     position: relative;
     z-index: 1;
+
+    @include sp {
+      display: none;
+    }
   }
   &--upper-layer {
     position: absolute;
@@ -14,6 +23,10 @@
     left: 0;
     right: 0;
     margin: auto;
+
+    @include sp {
+      width: 100%;
+    }
   }
 }
 
@@ -72,7 +85,6 @@
 
 .main_imgBox--upper-layer {
   height: 540px;
-  // overflow: hidden;
   position: relative;
 
   .main_imgM {
@@ -88,6 +100,11 @@
     animation: animeNoscale 24s 0s infinite;
     // -webkit-animation: anime 36s 0s infinite;
     // animation: anime 36s 0s infinite;
+
+    @include sp {
+      width: 100%;
+      background-size: contain;
+    }
 
     &:nth-of-type(2) {
       -webkit-animation-delay: 6s;

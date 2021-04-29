@@ -7,6 +7,10 @@
       margin: 0 auto;
       padding: 0 0 42px;
       width: 590px;
+
+      @include sp {
+        width: 100%;
+      }
     }
   }
 }

@@ -1,6 +1,10 @@
 .btn {
   &--wrap {
     text-align: center;
+
+    @include sp {
+      width: 100%;
+    }
   }
   &:hover {
     transform: translateY(-5px);
@@ -11,5 +15,10 @@
   &__img {
     width: 440px;
     height: 100px;
+
+    @include sp {
+      width: 100%;
+      height: auto;
+    }
   }
 }

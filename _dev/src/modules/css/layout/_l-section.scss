@@ -6,15 +6,53 @@
     width: 960px;
     margin: 0 auto;
     padding: 0 40px;
+
+    @include sp {
+      width: 90%;
+      padding: 0;
+    }
   }
 
   &__title {
-    color: $titleColor;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    padding: 40px 0 20px;
-    line-height: 3rem;
+    &--news {
+      color: $titleColor;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      padding: 40px 0 20px;
+      line-height: 3rem;
+
+      @include sp {
+        display: none;
+      }
+    }
+
+    &--about {
+      color: $titleColor;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      padding: 40px 0 20px;
+      line-height: 3rem;
+    }
+
+    &--project {
+      color: $titleColor;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      padding: 40px 0 20px;
+      line-height: 3rem;
+    }
+
+    &--donate {
+      color: $titleColor;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      padding: 40px 0 20px;
+      line-height: 3rem;
+    }
 
     &-ja {
       font-size: 2.4rem;

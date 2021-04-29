@@ -16,4 +16,9 @@
   width: 385px;
   height: 216px;
   margin: 0;
+
+  @include sp {
+    width: 300px;
+    height: 150px;
+  }
 }
