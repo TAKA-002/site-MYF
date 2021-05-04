@@ -12,18 +12,18 @@
 // ---------------------------------------------
 
 @import "layout/l-section";
-@import "layout/l-mv";
-@import "layout/l-main";
 @import "layout/l-header";
 @import "layout/l-navi";
-@import "layout/l-news";
-@import "layout/l-about";
-@import "layout/l-project";
-@import "layout/l-donate";
+@import "layout/l-mv";
 @import "layout/l-footer";
 
 // ---------------------------------------------
 
-@import "object/o-card";
-@import "object/o-btn";
-@import "object/o-slider";
+@import "object/p-news";
+@import "object/p-about";
+@import "object/p-project";
+@import "object/p-donate";
+@import "object/c-btn";
+@import "object/c-card";
+@import "object/c-slider";
+@import "object/utility";

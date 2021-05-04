@@ -11,6 +11,9 @@
   justify-content: start;
   align-items: center;
 
+  &__link {
+  }
+
   &__title {
     @include sp {
       margin: 0 0 0 20px;
@@ -28,14 +31,14 @@
       width: inherit;
     }
   }
-}
 
-.header__logo {
-  width: 365px;
-  height: 63px;
+  &__logo {
+    width: 365px;
+    height: 63px;
 
-  @include sp {
-    width: 210px;
-    height: 36px;
+    @include sp {
+      width: 210px;
+      height: 36px;
+    }
   }
 }
