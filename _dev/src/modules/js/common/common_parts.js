@@ -35,3 +35,30 @@ export function footer() {
     // },
   });
 }
+
+//=============
+//トップへ戻るボタン
+//=============
+export function toTopBtn() {
+  $(function () {
+    var toPageTopBtn = $("#toPageTop");
+    toPageTopBtn.hide();
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        toPageTopBtn.fadeIn();
+      } else {
+        toPageTopBtn.fadeOut();
+      }
+    });
+
+    toPageTopBtn.click(function () {
+      $("body,html").animate(
+        {
+          scrollTop: 0,
+        },
+        500
+      );
+    });
+  });
+}

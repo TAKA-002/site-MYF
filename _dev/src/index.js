@@ -9,6 +9,7 @@ javascriptのモジュール
 import * as common_parts from "./modules/js/common/common_parts.js";
 common_parts.header();
 common_parts.footer();
+common_parts.toTopBtn();
 
 import * as mySwiper from "./modules/js/plugin/config_swiper.js";
 

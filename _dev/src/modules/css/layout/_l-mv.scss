@@ -1,6 +1,7 @@
 .mv {
   background-color: $bgColor;
   position: relative;
+  z-index: 1;
   width: 100%;
 
   @include sp {
@@ -8,14 +9,20 @@
   }
 
   &--under-layer {
+    padding-top: 90px;
     position: relative;
     z-index: 1;
+    @include sp {
+      padding-top: 0;
+    }
 
     @include sp {
       display: none;
     }
   }
+
   &--upper-layer {
+    padding-top: 90px;
     position: absolute;
     top: 0;
     z-index: 2;
@@ -25,6 +32,7 @@
     margin: auto;
 
     @include sp {
+      padding-top: 0;
       width: 100%;
     }
   }

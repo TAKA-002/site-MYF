@@ -1,6 +1,11 @@
 .header {
-  position: relative;
+  width: inherit;
+  position: fixed;
   z-index: 2;
+
+  @include sp {
+    position: relative;
+  }
 }
 
 .l-header {
