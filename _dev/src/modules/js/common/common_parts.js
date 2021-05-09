@@ -62,3 +62,40 @@ export function toTopBtn() {
     });
   });
 }
+
+//=============
+//menuボタン
+//=============
+export function menuBtn() {
+  $(function () {
+    $(document).on("click", "#menu__btn", function () {
+      console.log("クリックはされている");
+
+      // #menu_btnに.activeがあるかどうか;
+      if ($(this).hasClass("active")) {
+        // .activeがあるときの処理
+        $(this).removeClass("active");
+        $(this).text("MENU");
+        $("#menu").removeClass("open");
+        $(".menu__background").removeClass("open");
+      } else {
+        // .activeがないときの処理
+        $(this).addClass("active");
+        $(this).text("CLOSE");
+        $("#menu").addClass("open");
+        $(".menu__background").addClass("open");
+      }
+    });
+
+    // メニューの背景がクリックされたときの処理
+    $(document).on("click", ".menu__background", function () {
+      // .menu-backgroundに.openがあるかどうか
+      if ($(this).hasClass("open")) {
+        // .openがあるときの処理
+        $(this).removeClass("open");
+        $("#menu__btn").removeClass("active").text("MENU");
+        $("#menu").removeClass("open");
+      }
+    });
+  });
+}

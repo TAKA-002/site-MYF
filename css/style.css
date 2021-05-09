@@ -113,7 +113,7 @@ body {
   height: auto;
   bottom: 30px;
   right: 20px;
-  background-color: #d9443d;
+  background-color: #191970;
   border-radius: 20px;
   padding: 5px;
   z-index: 10;
@@ -165,6 +165,8 @@ body {
 @media (max-width: 600px) {
   .l-header__title {
     margin: 0 0 0 20px;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -202,15 +204,30 @@ body {
 
 @media (max-width: 600px) {
   .l-navi {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: inherit;
+    height: auto;
     position: absolute;
+    top: 0;
     z-index: 2;
-    right: -150%;
+    padding: 30px 0;
   }
 }
 
 .l-navi__item {
   font-size: 1.8rem;
+}
+
+@media (max-width: 600px) {
+  .l-navi__item {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  .l-navi__item:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .l-navi__link {
@@ -221,61 +238,49 @@ body {
 }
 
 @media (max-width: 600px) {
-  .l-navi--toggle {
-    position: absolute;
-    right: 20px;
-    width: 30px;
-    height: 24px;
+  .l-navi__link {
+    flex-direction: row;
   }
-  .l-navi--toggle span {
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background: #ccc;
-    border-radius: 10px;
-    transition: all 400ms;
-  }
-  .l-navi--toggle span:nth-child(1) {
-    top: 0;
-  }
-  .l-navi--toggle span:nth-child(2) {
-    top: 10px;
-  }
-  .l-navi--toggle span:nth-child(3) {
-    top: 20px;
-  }
-}
-
-.l-navi.open {
-  right: 0;
 }
 
 .l-navi .icon--about-us::before {
   content: "";
   display: inline-block;
-  background-image: url("../images/common/icon_about-us.png");
+  background-image: url(../images/common/icon_about-us.png);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
   margin-bottom: 5px;
   background-size: contain;
+}
+
+@media (max-width: 600px) {
+  .l-navi .icon--about-us::before {
+    margin-right: 5px;
+  }
 }
 
 .l-navi .icon--project::before {
   content: "";
   display: inline-block;
-  background-image: url("../images/common/icon_project.png");
+  background-image: url(../images/common/icon_project.png);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
   margin-bottom: 5px;
   background-size: contain;
+}
+
+@media (max-width: 600px) {
+  .l-navi .icon--project::before {
+    margin-right: 5px;
+  }
 }
 
 .l-navi .icon--blog::before {
   content: "";
   display: inline-block;
-  background-image: url("../images/common/icon_blog.png");
+  background-image: url(../images/common/icon_blog.png);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -283,15 +288,83 @@ body {
   background-size: contain;
 }
 
+@media (max-width: 600px) {
+  .l-navi .icon--blog::before {
+    margin-right: 5px;
+  }
+}
+
 .l-navi .icon--donate::before {
   content: "";
   display: inline-block;
-  background-image: url("../images/common/icon_donate.png");
+  background-image: url(../images/common/icon_donate.png);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
   margin-bottom: 5px;
   background-size: contain;
+}
+
+@media (max-width: 600px) {
+  .l-navi .icon--donate::before {
+    margin-right: 5px;
+  }
+}
+
+.menu__btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    width: 250px;
+    height: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateX(-250px);
+    /* right0から250px移動した位置 */
+    transition: all 0.5s;
+    /* 移動する速さ */
+  }
+  .menu.open {
+    transform: translateX(0);
+    /* right0まで-250px移動 */
+  }
+  .menu__btn {
+    display: block;
+    position: fixed;
+    right: 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: #191970;
+    cursor: pointer;
+    z-index: 11;
+  }
+  .menu__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    opacity: 0;
+    /* 透明度を0にすることで隠す */
+    transition: opacity 0.5s;
+    /* 透明度の0→1になる速度 */
+  }
+  .menu__background.open {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    /* メニューが表示されているときには背景が表示 */
+  }
 }
 
 .mv {
