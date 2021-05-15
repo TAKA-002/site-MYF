@@ -99,3 +99,17 @@ export function menuBtn() {
     });
   });
 }
+
+//=============
+//menuボタン
+//=============
+export function chengeLang() {
+  $(document).on("mouseover", "#ch-Lang", function () {
+    console.log("のったぜ");
+    $("ul:not(:animated)", this).slideDown();
+  });
+  $(document).on("mouseleave", "#ch-Lang", function () {
+    console.log("おろしたぜ");
+    $("ul.l-navi--chengeLang__list-item__wrap", this).slideUp();
+  });
+}

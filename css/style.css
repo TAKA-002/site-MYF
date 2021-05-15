@@ -145,6 +145,8 @@ body {
   width: inherit;
   position: fixed;
   z-index: 2;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  /*これを付け足し*/
 }
 
 @media (max-width: 600px) {
@@ -155,11 +157,18 @@ body {
 
 .l-header {
   width: 100%;
-  height: 90px;
+  height: 130px;
   background-color: #288f4d;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .l-header {
+    height: 90px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -311,6 +320,96 @@ body {
   }
 }
 
+.l-navi__wrap {
+  margin-top: 10px;
+  width: 960px;
+  height: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .l-navi__wrap {
+    width: inherit;
+    position: absolute;
+    top: 100px;
+  }
+}
+
+.l-navi--chengeLang {
+  width: 120px;
+  list-style: none;
+  position: absolute;
+  right: 30px;
+}
+
+@media (max-width: 600px) {
+  .l-navi--chengeLang {
+    width: 70px;
+    right: 20px;
+  }
+}
+
+.l-navi--chengeLang__list {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+  width: inherit;
+  cursor: pointer;
+}
+
+.l-navi--chengeLang__list .disabled {
+  pointer-events: none;
+}
+
+.l-navi--chengeLang__list-header {
+  position: relative;
+}
+
+.l-navi--chengeLang__list-header::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(/site-MYF/images/top/earth.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 600px) {
+  .l-navi--chengeLang__list-header::after {
+    top: 8px;
+    right: 0;
+    left: 1px;
+  }
+}
+
+.l-navi--chengeLang__list a {
+  padding: 10px;
+  background-color: #000;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1em;
+}
+
+.l-navi--chengeLang__list a:hover {
+  background-color: #333;
+}
+
+.l-navi--chengeLang__list-item__wrap {
+  width: 100%;
+  display: none;
+  position: absolute;
+  padding: 0;
+}
+
 .menu__btn {
   display: none;
 }
@@ -337,7 +436,6 @@ body {
     position: fixed;
     right: 0;
     color: #fff;
-    border-radius: 5px;
     padding: 10px 20px;
     margin-right: 20px;
     background-color: #191970;
