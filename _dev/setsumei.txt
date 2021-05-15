@@ -12,7 +12,7 @@ node_modulesディレクトリは、webpackのパッケージが入っている�
 
 
 ▼コマンド①
-npm install --save-dev webpack@5.28.0
+npm install
 
 これでnode_modulesディレクトリが復活する
 
