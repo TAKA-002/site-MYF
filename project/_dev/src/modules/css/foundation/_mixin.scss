@@ -1,0 +1,28 @@
+@mixin title($tColor: $titleColor, $fSize: $titleFontSize) {
+  color: $tColor;
+  text-align: center;
+  font-size: $fSize;
+  font-weight: bold;
+  padding: 40px 0 20px;
+  line-height: 3rem;
+}
+
+// =======================================
+// ヘッダーのメニューアイコン
+// =======================================
+$sitePath: #{"url(/site-MYF/images/common/"};
+
+@mixin pcnav-icon($bgImg) {
+  content: "";
+  display: inline-block;
+  background-image: $sitePath#{$bgImg}#{")"};
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+  background-size: contain;
+}
+
+@mixin spnav-icon() {
+  margin-right: 5px;
+}
