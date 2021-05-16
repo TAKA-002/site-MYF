@@ -1,0 +1,218 @@
+.l-navi {
+  display: flex;
+  justify-content: space-between;
+  width: 548px;
+
+  @include sp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: inherit;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    padding: 30px 0;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+    @include sp {
+      width: 90%;
+      margin: 0 auto 30px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    @include sp {
+      flex-direction: row;
+    }
+  }
+
+  .icon {
+    &--about-us {
+      &::before {
+        @include pcnav-icon(icon_about-us#{".png"});
+
+        @include sp {
+          @include spnav-icon();
+        }
+      }
+    }
+    &--project {
+      &::before {
+        @include pcnav-icon(icon_project#{".png"});
+
+        @include sp {
+          @include spnav-icon();
+        }
+      }
+    }
+    &--blog {
+      &::before {
+        @include pcnav-icon(icon_blog#{".png"});
+
+        @include sp {
+          @include spnav-icon();
+        }
+      }
+    }
+    &--donate {
+      &::before {
+        @include pcnav-icon(icon_donate#{".png"});
+
+        @include sp {
+          @include spnav-icon();
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    margin-top: 10px;
+    width: 960px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+
+    @include sp {
+      width: inherit;
+      position: absolute;
+      top: 100px;
+    }
+  }
+
+  &--chengeLang {
+    width: 120px;
+    list-style: none;
+    position: absolute;
+    right: 30px;
+
+    @include sp {
+      width: 70px;
+      right: 20px;
+    }
+
+    &__list {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      float: left;
+      width: inherit;
+      cursor: pointer;
+
+      //無効化
+      .disabled {
+        pointer-events: none;
+      }
+
+      &-header {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-image: url(/site-MYF/images/top/earth.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+
+          @include sp {
+            top: 8px;
+            right: 0;
+            left: 1px;
+          }
+        }
+      }
+
+      a {
+        padding: 10px;
+        background-color: #000;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        line-height: 1em;
+
+        &:hover {
+          background-color: #333;
+        }
+      }
+
+      &-item__wrap {
+        width: 100%;
+        display: none;
+        position: absolute;
+        padding: 0;
+        // background: rgb(75, 100, 209);
+      }
+    }
+  }
+}
+
+.menu__btn {
+  display: none;
+}
+
+@include sp {
+  .menu {
+    width: 250px;
+    height: 350px;
+    // background-color: #191970;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateX(-250px); /* right0から250px移動した位置 */
+    transition: all 0.5s; /* 移動する速さ */
+
+    &.open {
+      transform: translateX(0); /* right0まで-250px移動 */
+    }
+
+    &__btn {
+      display: block;
+      position: fixed;
+      right: 0;
+      color: #fff;
+      padding: 10px 20px;
+      margin-right: 20px;
+      background-color: $cBlue;
+      cursor: pointer;
+      z-index: 11;
+    }
+  }
+
+  .menu__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    opacity: 0; /* 透明度を0にすることで隠す */
+    transition: opacity 0.5s; /* 透明度の0→1になる速度 */
+
+    &.open {
+      width: 100%;
+      height: 100%;
+      opacity: 1; /* メニューが表示されているときには背景が表示 */
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.p-project {
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    &--wrap {
+      margin: 0 auto;
+      padding: 0 0 42px;
+      width: 590px;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+}

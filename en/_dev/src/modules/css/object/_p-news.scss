@@ -1,0 +1,73 @@
+.p-news {
+  &--wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+      display: block;
+    }
+  }
+
+  &__list {
+    border-bottom: 1px solid #e6e6e6;
+    width: 510px;
+
+    @include sp {
+      width: inherit;
+    }
+
+    &--wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include sp {
+        display: block;
+        padding-bottom: 37px;
+      }
+    }
+
+    &__item {
+      font-size: 1.6rem;
+      padding: 0 0 25px;
+      border-top: 1px solid #e6e6e6;
+
+      @include sp {
+        display: none;
+      }
+
+      &:last-child {
+        padding: 0;
+      }
+
+      a {
+        position: relative;
+        display: flex;
+      }
+    }
+
+    &__date {
+      display: flex;
+      margin-right: 35px;
+      // もしもアイコンをつけるときはmarginを56pxに調整
+      // margin-right: 56px;
+    }
+  }
+
+  &__item {
+    background: #f6c6a2;
+    border-radius: 14px;
+    width: 6em;
+    /* 親要素の文字サイズを基準 */
+    text-align: center;
+    margin-left: 20px;
+  }
+}
+
+.l-fb {
+  width: 350px;
+
+  @include sp {
+    width: 100%;
+  }
+}
