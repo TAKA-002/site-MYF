@@ -69,7 +69,7 @@ export function toTopBtn() {
 export function menuBtn() {
   $(function () {
     $(document).on("click", "#menu__btn", function () {
-      console.log("クリックはされている");
+      // console.log("クリックはされている");
 
       // #menu_btnに.activeがあるかどうか;
       if ($(this).hasClass("active")) {
@@ -97,5 +97,19 @@ export function menuBtn() {
         $("#menu").removeClass("open");
       }
     });
+  });
+}
+
+//=============
+//menuボタン
+//=============
+export function chengeLang() {
+  $(document).on("mouseover", "#ch-Lang", function () {
+    // console.log("のったぜ");
+    $("ul:not(:animated)", this).slideDown();
+  });
+  $(document).on("mouseleave", "#ch-Lang", function () {
+    // console.log("おろしたぜ");
+    $("ul.l-navi--chengeLang__list-item__wrap", this).slideUp();
   });
 }

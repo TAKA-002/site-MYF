@@ -145,6 +145,8 @@ body {
   width: inherit;
   position: fixed;
   z-index: 2;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  /*これを付け足し*/
 }
 
 @media (max-width: 600px) {
@@ -155,11 +157,18 @@ body {
 
 .l-header {
   width: 100%;
-  height: 90px;
+  height: 130px;
   background-color: #288f4d;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .l-header {
+    height: 90px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -311,6 +320,96 @@ body {
   }
 }
 
+.l-navi__wrap {
+  margin-top: 10px;
+  width: 960px;
+  height: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .l-navi__wrap {
+    width: inherit;
+    position: absolute;
+    top: 100px;
+  }
+}
+
+.l-navi--chengeLang {
+  width: 120px;
+  list-style: none;
+  position: absolute;
+  right: 30px;
+}
+
+@media (max-width: 600px) {
+  .l-navi--chengeLang {
+    width: 70px;
+    right: 20px;
+  }
+}
+
+.l-navi--chengeLang__list {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+  width: inherit;
+  cursor: pointer;
+}
+
+.l-navi--chengeLang__list .disabled {
+  pointer-events: none;
+}
+
+.l-navi--chengeLang__list-header {
+  position: relative;
+}
+
+.l-navi--chengeLang__list-header::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(/site-MYF/images/top/earth.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 600px) {
+  .l-navi--chengeLang__list-header::after {
+    top: 8px;
+    right: 0;
+    left: 1px;
+  }
+}
+
+.l-navi--chengeLang__list a {
+  padding: 10px;
+  background-color: #000;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1em;
+}
+
+.l-navi--chengeLang__list a:hover {
+  background-color: #333;
+}
+
+.l-navi--chengeLang__list-item__wrap {
+  width: 100%;
+  display: none;
+  position: absolute;
+  padding: 0;
+}
+
 .menu__btn {
   display: none;
 }
@@ -337,7 +436,6 @@ body {
     position: fixed;
     right: 0;
     color: #fff;
-    border-radius: 5px;
     padding: 10px 20px;
     margin-right: 20px;
     background-color: #191970;
@@ -364,219 +462,6 @@ body {
     height: 100%;
     opacity: 1;
     /* メニューが表示されているときには背景が表示 */
-  }
-}
-
-.mv {
-  background-color: #e5f1e3;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
-@media (max-width: 600px) {
-  .mv {
-    height: 250px;
-  }
-}
-
-.mv--under-layer {
-  padding-top: 90px;
-  position: relative;
-  z-index: 1;
-}
-
-@media (max-width: 600px) {
-  .mv--under-layer {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .mv--under-layer {
-    display: none;
-  }
-}
-
-.mv--upper-layer {
-  padding-top: 90px;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 960px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-@media (max-width: 600px) {
-  .mv--upper-layer {
-    padding-top: 0;
-    width: 100%;
-  }
-}
-
-.main_imgBox--under-layer {
-  height: 540px;
-  overflow: hidden;
-  position: relative;
-}
-
-.main_imgBox--under-layer .main_img {
-  z-index: 10;
-  opacity: 0;
-  width: 100%;
-  height: 540px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-animation: anime 24s 0s infinite;
-  animation: anime 24s 0s infinite;
-}
-
-.main_imgBox--under-layer .main_img:nth-of-type(2) {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
-}
-
-.main_imgBox--under-layer .main_img:nth-of-type(3) {
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
-}
-
-.main_imgBox--under-layer .main_img:nth-of-type(4) {
-  -webkit-animation-delay: 18s;
-  animation-delay: 18s;
-}
-
-.main_imgBox--upper-layer {
-  height: 540px;
-  position: relative;
-}
-
-.main_imgBox--upper-layer .main_imgM {
-  opacity: 0;
-  width: 960px;
-  height: 100%;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-animation: animeNoscale 24s 0s infinite;
-  animation: animeNoscale 24s 0s infinite;
-}
-
-@media (max-width: 600px) {
-  .main_imgBox--upper-layer .main_imgM {
-    width: 100%;
-    background-size: contain;
-  }
-}
-
-.main_imgBox--upper-layer .main_imgM:nth-of-type(2) {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
-}
-
-.main_imgBox--upper-layer .main_imgM:nth-of-type(3) {
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
-}
-
-.main_imgBox--upper-layer .main_imgM:nth-of-type(4) {
-  -webkit-animation-delay: 18s;
-  animation-delay: 18s;
-}
-
-.main_logo {
-  z-index: 11;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: auto;
-}
-
-@keyframes anime {
-  0% {
-    opacity: 0;
-  }
-  8% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-    transform: scale(1.2);
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes anime {
-  0% {
-    opacity: 0;
-  }
-  8% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-    -webkit-transform: scale(1.2);
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes animeNoscale {
-  0% {
-    opacity: 0;
-  }
-  8% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes animeNoscale {
-  0% {
-    opacity: 0;
-  }
-  8% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
