@@ -11,6 +11,7 @@ import * as common_parts from "./modules/js/common/common_parts.js";
 common_parts.header();
 common_parts.footer();
 common_parts.toTopBtn();
+common_parts.chengeLang();
 common_parts.menuBtn();
 
 /*=============================================================================
