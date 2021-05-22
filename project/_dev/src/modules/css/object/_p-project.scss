@@ -1,0 +1,43 @@
+.p-project {
+  &--wrap {
+    width: 960px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+
+    @include sp {
+      width: 90%;
+      padding: 0;
+    }
+  }
+  &--wrap:nth-of-type(1) {
+    padding-top: 60px;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+  }
+
+  &__article {
+    &-left {
+      width: 50%;
+    }
+
+    &-right {
+      width: 50%;
+    }
+
+    &-overview {
+      font-size: 1.8rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    &-detail {
+      font-size: 1.8rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+  }
+}
