@@ -818,6 +818,7 @@ body {
 .p-news__list__item a {
   position: relative;
   display: flex;
+  color: #333333;
 }
 
 .p-news__list__date {
@@ -862,6 +863,7 @@ body {
 }
 
 .p-about__description {
+  color: #333333;
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -879,6 +881,7 @@ body {
 }
 
 .p-project__description {
+  color: #333333;
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -907,6 +910,7 @@ body {
 }
 
 .p-donate__description {
+  color: #333333;
   width: 90%;
   margin: 0 auto;
   font-size: 1.6rem;
@@ -1042,7 +1046,7 @@ body {
 
 .c-card__title {
   font-size: 1.6rem;
-  color: #333;
+  color: #333333;
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -1054,7 +1058,7 @@ body {
 }
 
 .c-card__text {
-  color: #777;
+  color: #333333;
   font-size: 1.4rem;
   line-height: 1.4;
 }
