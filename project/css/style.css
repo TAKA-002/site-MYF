@@ -568,13 +568,16 @@ body {
   margin: 0 auto;
   padding: 80px 40px;
   display: flex;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #dedede;
+  color: #333333;
 }
 
 @media (max-width: 600px) {
   .p-project--wrap {
+    display: block;
     width: 90%;
-    padding: 0;
+    padding: 0 0 40px 0;
+    margin: 0 auto 40px;
   }
 }
 
@@ -586,12 +589,47 @@ body {
   font-size: 1.8rem;
 }
 
+.p-project__title a {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.p-project__title a:hover::after {
+  width: 100%;
+}
+
+.p-project__title a::after {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #288f4d;
+  transition: 0.3s;
+}
+
 .p-project__article-left {
+  margin-bottom: 80px;
   width: 50%;
+}
+
+@media (max-width: 600px) {
+  .p-project__article-left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 .p-project__article-right {
   width: 50%;
+}
+
+@media (max-width: 600px) {
+  .p-project__article-right {
+    width: 100%;
+  }
 }
 
 .p-project__article-overview {
@@ -602,8 +640,59 @@ body {
 
 .p-project__article-detail {
   font-size: 1.8rem;
-  line-height: 1.6;
   margin-bottom: 40px;
+  background-image: linear-gradient(180deg, rgba(204, 204, 204, 0) 0%, rgba(204, 204, 204, 0) 98.5%, #646464 100%);
+  background-repeat: repeat-y;
+  background-size: 100% 2.4em;
+  line-height: 2.4;
+}
+
+.p-project__article-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.p-project__article-img img {
+  width: 100%;
+  height: auto;
+  transition: 1s all;
+}
+
+.p-project__article-img img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 1s all;
+}
+
+.p-project__link-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .p-project__link-btn {
+    position: relative;
+    background: linear-gradient(70deg, #45bd20, #86d419);
+    color: #fff;
+    display: block;
+    width: 250px;
+    height: 50px;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #18c95c;
+  }
+  .p-project__link-btn::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    right: 13px;
+    top: 19px;
+    transform: rotate(45deg);
+  }
 }
 
 .c-video--wrap {
