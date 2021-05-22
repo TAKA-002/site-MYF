@@ -5,7 +5,6 @@
     padding: 80px 40px;
     display: flex;
     border-bottom: 2px solid #dedede;
-    color: $cText;
 
     @include sp {
       display: block;
@@ -20,7 +19,7 @@
 
   &__title {
     font-size: 1.8rem;
-    // color: $cText;
+    color: $cText;
     @include sp {
     }
 
@@ -68,12 +67,14 @@
     }
 
     &-overview {
+      color: $cText;
       font-size: 1.8rem;
       line-height: 1.6;
       margin-bottom: 10px;
     }
 
     &-detail {
+      color: $cText;
       font-size: 1.8rem;
       margin-bottom: 40px;
 

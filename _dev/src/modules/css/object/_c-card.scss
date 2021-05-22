@@ -52,7 +52,7 @@
 
   &__title {
     font-size: 1.6rem;
-    color: #333;
+    color: $cText;
     font-weight: 700;
     margin-bottom: 12px;
 
@@ -62,7 +62,7 @@
   }
 
   &__text {
-    color: #777;
+    color: $cText;
     font-size: 1.4rem;
     line-height: 1.4;
 
