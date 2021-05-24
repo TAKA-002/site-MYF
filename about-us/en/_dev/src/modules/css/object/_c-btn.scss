@@ -1,0 +1,47 @@
+// news アロー
+.arrow {
+  width: 25px;
+  height: 1px;
+  background: #707070;
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 1px;
+    background: #707070;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0px;
+    bottom: 2px;
+  }
+}
+
+// btn
+.c-btn {
+  &--wrap {
+    text-align: center;
+
+    @include sp {
+      width: 100%;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s;
+  }
+
+  &__img {
+    width: 440px;
+    height: 100px;
+
+    @include sp {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

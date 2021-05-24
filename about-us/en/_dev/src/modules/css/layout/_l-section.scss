@@ -1,0 +1,64 @@
+.l-section {
+  width: 100%;
+
+  &--wrap {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @include sp {
+      width: 90%;
+      padding: 0;
+    }
+  }
+  &--wrap-video {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @include sp {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    &--news {
+      @include title($titleColor);
+
+      @include sp {
+        display: none;
+      }
+    }
+
+    &--about {
+      @include title($titleColor);
+
+      @include sp {
+        @include title($titleColor, $fSize: 3rem);
+      }
+    }
+
+    &--project {
+      @include title($titleColor);
+
+      @include sp {
+        @include title($titleColor, $fSize: 3rem);
+      }
+    }
+
+    &--donate {
+      @include title($titleColor);
+
+      @include title($titleColor, $fSize: 3rem);
+    }
+
+    &-ja {
+      font-size: 2.4rem;
+
+      @include sp {
+        font-size: 2rem;
+      }
+    }
+  }
+}

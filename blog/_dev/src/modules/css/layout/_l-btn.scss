@@ -1,0 +1,31 @@
+.l-toTopBtn {
+  position: fixed;
+  width: 90px;
+  height: auto;
+  bottom: 30px;
+  right: 20px;
+  background-color: $cBlue;
+  border-radius: 20px;
+  padding: 5px;
+  z-index: 10;
+
+  @include sp {
+    width: 44px;
+    border-radius: 5px;
+    bottom: 140px;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+    transition: all 0.5s ease;
+  }
+}
