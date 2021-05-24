@@ -19,6 +19,7 @@
 
   &__title {
     font-size: 1.8rem;
+    line-height: 2.4;
     color: $cText;
     @include sp {
     }
@@ -38,11 +39,11 @@
     // 下線
     a::after {
       position: absolute;
-      bottom: -7px;
+      bottom: 5px;
       left: 0;
       content: "";
       width: 0;
-      height: 2px;
+      height: 1px;
       background-color: #288f4d;
       transition: 0.3s;
     }
@@ -50,7 +51,6 @@
 
   &__article {
     &-left {
-      margin-bottom: 80px;
       width: 50%;
       @include sp {
         width: 100%;
