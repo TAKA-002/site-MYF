@@ -1,0 +1,11 @@
+.c-main-visual {
+  width: 100vw;
+
+  &__wrap {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
