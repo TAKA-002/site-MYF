@@ -2,11 +2,23 @@
   width: calc(100% - 20px);
   margin: 0 auto;
 
+  &--wrap {
+    @include pc {
+      width: 800px;
+      margin: 0 auto;
+    }
+  }
+
   &__title {
     color: #333;
     margin: 20px 0;
     font-size: 2.4rem;
     font-weight: 600;
+
+    @include pc {
+      margin: 72px 0;
+      font-size: 3.6rem;
+    }
   }
 
   &__text {
@@ -14,6 +26,12 @@
     font-size: 1.6rem;
     line-height: 30px;
     padding-bottom: 20px;
+
+    @include pc {
+      font-size: 1.8rem;
+      line-height: 36px;
+      padding-bottom: 72px;
+    }
   }
 
   &__figure {
@@ -21,6 +39,11 @@
     position: relative;
     z-index: 1;
     margin-bottom: 20px;
+
+    @include pc {
+      width: 800px;
+      margin: 0 auto;
+    }
 
     img {
       width: 100%;
@@ -97,7 +120,11 @@
 
   &__detail {
     &-list {
-      margin-top: 20px;
+      margin: 20px 0;
+
+      @include pc {
+        margin: 0;
+      }
     }
 
     &-item {
@@ -107,6 +134,10 @@
       padding-left: 3.2rem;
       line-height: 30px;
       margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
 
       span {
         position: absolute;
