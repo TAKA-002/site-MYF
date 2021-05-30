@@ -6,3 +6,15 @@
 .pb0 {
   padding-bottom: 0;
 }
+
+.sp-on {
+  @include pc {
+    display: none;
+  }
+}
+
+.pc-on {
+  @include sp {
+    display: none;
+  }
+}
