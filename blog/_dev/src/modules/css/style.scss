@@ -9,6 +9,9 @@
 @import "foundation/media";
 @import "foundation/mixin";
 
+// 追加したやつ
+@import "foundation/blog";
+
 // ---------------------------------------------
 
 @import "layout/l-section";
@@ -22,3 +25,4 @@
 @import "object/c-video";
 @import "object/c-btn";
 @import "object/utility";
+
