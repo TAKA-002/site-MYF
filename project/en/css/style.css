@@ -765,6 +765,18 @@ body {
   }
 }
 
+.c-main-visual {
+  width: 100vw;
+}
+
+.c-main-visual__wrap {
+  width: 100%;
+}
+
+.c-main-visual__wrap img {
+  width: 100%;
+}
+
 .bg-green {
   background: #e5f1e3;
 }

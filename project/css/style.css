@@ -894,6 +894,12 @@ body {
   }
 }
 
+@media (min-width: 601px) {
+  .c-article--wrap + .c-article__figure {
+    margin-top: 72px;
+  }
+}
+
 .c-article__title {
   color: #333;
   margin: 20px 0;
@@ -933,7 +939,7 @@ body {
 @media (min-width: 601px) {
   .c-article__figure {
     width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 72px;
   }
 }
 
@@ -987,13 +993,26 @@ body {
   position: relative;
   z-index: 1;
   float: left;
-  margin: 0 36px 0 0;
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 601px) {
+  .c-article__figure-sm--wrap-pc {
+    margin: 0 36px 0 0;
+    margin: 0;
+  }
 }
 
 .c-article__figure-sm--wrap-pc img {
-  width: 400px;
+  width: 100%;
   height: auto;
   vertical-align: top;
+}
+
+@media (min-width: 601px) {
+  .c-article__figure-sm--wrap-pc img {
+    width: 400px;
+  }
 }
 
 .c-article__figure-sm-pccap {
@@ -1035,8 +1054,15 @@ body {
 
 .c-article__imgText {
   color: #333;
-  font-size: 1.8rem;
-  line-height: 36px;
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+
+@media (min-width: 601px) {
+  .c-article__imgText {
+    font-size: 1.8rem;
+    line-height: 36px;
+  }
 }
 
 .annotation {
