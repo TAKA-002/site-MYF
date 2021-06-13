@@ -636,8 +636,10 @@ body {
   padding-bottom: 0;
 }
 
-p {
-  font-size: 50px;
+a {
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 a:hover::after {
