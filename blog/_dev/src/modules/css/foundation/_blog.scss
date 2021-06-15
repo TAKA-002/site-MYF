@@ -1,9 +1,26 @@
 .blog{
     display: flex;
+    justify-content: space-between;
     margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
     width: 960px;
+    border-bottom: 1px solid #e7e7e7;;
 
     p{
         font-size: 16px;
+    }
+
+    .blog-title{
+        width: 480px;
+    }
+
+    .blog-content{
+       width: 480px;
+
+       img{
+           margin-top: 40px;
+           margin-bottom: 80px;
+       }
     }
 }
