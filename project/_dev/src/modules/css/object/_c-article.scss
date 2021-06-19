@@ -171,10 +171,36 @@
   color: rgb(82, 82, 82);
   text-decoration: underline solid rgb(82, 82, 82);
 
-  &::after {
-    content: "*1";
-    color: #ff3333;
-    font-weight: 600;
+  &.one {
+    &::after {
+      content: "*1";
+      color: #ff3333;
+      font-weight: 600;
+    }
+  }
+
+  &.two {
+    &::after {
+      content: "*2";
+      color: #ff3333;
+      font-weight: 600;
+    }
+  }
+
+  &.three {
+    &::after {
+      content: "*3";
+      color: #ff3333;
+      font-weight: 600;
+    }
+  }
+
+  &.four {
+    &::after {
+      content: "*4";
+      color: #ff3333;
+      font-weight: 600;
+    }
   }
 
   &__detail {
