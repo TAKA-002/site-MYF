@@ -25,10 +25,12 @@ $pc: 601px; //pc
 
       &__title{
         line-height: 2.4;
-      }
+      
       @include sp {
         font-size: 16px;
+        margin-top: 60px;
        }
+      }
     }
 
     &__right{
@@ -42,7 +44,8 @@ $pc: 601px; //pc
         line-height: 2.4;
 
         @include sp {
-         font-size: 14px;
+        font-size: 14px;
+        margin-top: 80px;
         }
 
         }
