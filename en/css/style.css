@@ -1093,7 +1093,7 @@ body {
 
 .btn__icon-message::after {
   content: "";
-  background-image: url(/site-MYF/images/top/icon_construct.png);
+  background-image: url(/site-MYF/images/top/icon_message.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1105,7 +1105,7 @@ body {
 
 .btn__icon-overview::after {
   content: "";
-  background-image: url(/site-MYF/images/top/icon_water.png);
+  background-image: url(/site-MYF/images/top/icon_staff.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
