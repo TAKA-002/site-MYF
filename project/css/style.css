@@ -891,6 +891,7 @@ body {
   .c-article--wrap {
     width: 800px;
     margin: 0 auto;
+    padding-bottom: 72px;
   }
 }
 
@@ -912,6 +913,25 @@ body {
     margin: 72px 0;
     font-size: 3.6rem;
   }
+}
+
+.c-article__heading02 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+  margin: 20px 0;
+  line-height: 2.8rem;
+}
+
+.c-article__heading02::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 28px;
+  left: 0;
+  top: 0;
+  background-color: #288f4d;
 }
 
 .c-article__text {
@@ -999,7 +1019,6 @@ body {
 @media (min-width: 601px) {
   .c-article__figure-sm--wrap-pc {
     margin: 0 36px 0 0;
-    margin: 0;
   }
 }
 
