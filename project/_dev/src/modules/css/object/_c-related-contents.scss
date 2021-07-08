@@ -1,10 +1,11 @@
 .c-related-contents {
   width: calc(100% - 20px);
   height: auto;
-  margin: 0 auto;
+  margin: 40px auto;
   padding-bottom: 20px;
-
+  
   @include pc {
+    margin: 0 auto;
     width: 800px;
   }
 
@@ -37,7 +38,6 @@
   }
 
   &__thumb {
-    background-color: red;
     height: auto;
     margin-right: 10px;
 
@@ -59,17 +59,30 @@
     font-size: 2rem;
     font-weight: 600;
     margin-top: 7.5px;
+
+    @include sp{
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
   }
 
   &__time {
     font-size: 1.6rem;
     margin-top: 9px;
+
+    @include sp{
+      font-size: 1.4rem;
+    }
   }
 
   &__link {
     font-size: 1.6rem;
     margin-top: 4px;
     text-align: right;
+
+    @include sp{
+      font-size: 1.4rem;
+    }
 
     span {
       position: relative;
