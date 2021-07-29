@@ -1,12 +1,15 @@
 .p-news {
+  @include sp {
+    position: relative;
+    z-index: 2;
+  }
+
   &--wrap {
     display: flex;
     justify-content: space-between;
 
     @include sp {
       display: block;
-      position: relative;
-      z-index: 2;
     }
   }
 

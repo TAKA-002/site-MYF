@@ -764,6 +764,13 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .p-news {
+    position: relative;
+    z-index: 2;
+  }
+}
+
 .p-news--wrap {
   display: flex;
   justify-content: space-between;
@@ -772,8 +779,6 @@ body {
 @media (max-width: 600px) {
   .p-news--wrap {
     display: block;
-    position: relative;
-    z-index: 2;
   }
 }
 
