@@ -1,7 +1,7 @@
 .header {
   width: inherit;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /*これを付け足し*/
 
   @include sp {
