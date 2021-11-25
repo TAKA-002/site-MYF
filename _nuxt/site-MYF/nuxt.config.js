@@ -1,14 +1,15 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'site-MYF',
+    title: 'マンフィーと青年基金NGO | Monphy & Youth Foundation NGO',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'keywords', name: 'keywords', content: 'NGO,Ghana,monphy,ボランティア,ガーナ,マンフィー' },
+      { hid: 'description', name: 'description', content: 'マンフィーと青年基金NGOは、皆さまの寄付や募金でガーナ共和国の貧困層に衣類や日用品の配布、小学校の建設などをおこなっています。' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -18,6 +19,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/css/reset.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

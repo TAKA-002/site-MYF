@@ -1,0 +1,59 @@
+<template>
+  <div class="l-header">
+    <div class="l-header__wrap">
+      <h1 class="l-header__title">
+        <a href="/site-MYF/" class="l-header__link">
+          <img
+            class="l-header__logo"
+            src="/site-MYF/images/common/logo.png"
+            alt=""
+          />
+        </a>
+      </h1>
+
+      <div id="menu" class="menu">
+        <ul class="l-navi">
+          <li class="l-navi__item">
+            <a href="/site-MYF/about-us/" class="l-navi__link icon--about-us"
+              >チームについて</a
+            >
+          </li>
+          <li class="l-navi__item">
+            <a href="/site-MYF/project/" class="l-navi__link icon--project"
+              >プロジェクト</a
+            >
+          </li>
+          <li class="l-navi__item">
+            <a href="/site-MYF/blog/" class="l-navi__link icon--blog">ブログ</a>
+          </li>
+          <li class="l-navi__item">
+            <a
+              href="/site-MYF/project/fundraising/"
+              class="l-navi__link icon--donate"
+              >ご寄付について</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div id="menu__btn" class="menu__btn">MENU</div>
+
+      <div class="menu__background"></div>
+    </div>
+
+    <div class="l-navi__wrap">
+      <ul id="ch-Lang" class="l-navi--chengeLang">
+        <li class="l-navi--chengeLang__list">
+          <a class="l-navi--chengeLang__list-header disabled" href="#"
+            >Language</a
+          >
+          <ul class="l-navi--chengeLang__list-item__wrap">
+            <li><a href="./">Japanese</a></li>
+            <li><a href="./en/">English</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
+
