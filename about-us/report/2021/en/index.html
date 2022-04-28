@@ -5,58 +5,66 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accounting Report | Monphy & Youth Foundation NGO</title>
+  <title>School events with local people. | Blog | Monphy & Youth Foudation NGO</title>
   <meta name="keywords" content="NGO,Ghana,monphy,ボランティア,ガーナ,マンフィー" />
   <meta name="description" content="Monphy & Youth Foundation NGO are Donating and Fundraising to distribute clothing and daily necessities to the poor in the Republic of Ghana and to build elementary schools." />
-  <meta property="og:title" content="Accounting Report | Monphy & Youth Foundation NGO" />
+  <meta property="og:title" content="School events with local people. | Blog | Monphy & Youth Foudation NGO" />
   <meta property="og:description" content="Monphy & Youth Foundation NGO are Donating and Fundraising to distribute clothing and daily necessities to the poor in the Republic of Ghana and to build elementary schools." />
 
   <!-- <meta property="og:url" content="ページの URL" /> -->
   <!-- <meta property="og:image" content="サムネイル画像の URL" /> -->
-  <meta property="og:site_name" content="Accounting Report | Monphy & Youth Foundation NGO" />
+  <meta property="og:site_name" content="School events with local people. | Blog | Monphy & Youth Foudation NGO" />
   <meta property="og:locale" content="ja_JP" />
 
   <link rel="shortcut icon" type="image/x-icon" href="http://test.miu-parts.work/MYF/images/common/favicon.ico" />
   <link rel="stylesheet" href="/site-MYF/css/reset.css" />
   <link rel="stylesheet" href="/site-MYF/project/css/style.css" />
 
+  <!-- highcharts base -->
+  <link rel="stylesheet" href="/site-MYF/css/highcharts/chart.css" />
+
   <script src="/site-MYF/js/jquery-3.5.1.min.js"></script>
   <script src="https://kit.fontawesome.com/c4397f6e78.js" crossorigin="anonymous"></script>
+
+  <!-- highcharts base -->
+  <script src="/site-MYF/js/highcharts/highcharts.js"></script>
+  <script src="/site-MYF/js/highcharts/data.js"></script>
+
 </head>
 
 <body>
   <!-- #headerに共通部分は別ファイルで呼び出す -->
   <header id="header" class="header"></header>
 
-  <section class="l-section">
-    <h1 class="l-section__title--project">Accounting Report</h1>
 
-    <!-- 2021 start -->
-    <div class="p-project--wrap">
-      <div class="p-project__article-left">
-        <h2 class="p-project__title">
-          <a href="/site-MYF/about-us/report/2021/en/">2021 Report</a>
-        </h2>
-      </div>
-      <div class="p-project__article-right">
-        <p class="p-project__article-detail">
-          ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
-          <a class="p-project__article-link" href="/site-MYF/about-us/report/2021/en/">
-            <span class="p-project__article-link__arrow"></span>
-            <span class="p-project__article-link__text">Please read more about this.</span>
-          </a>
-        </p>
-
-        <figure class="p-project__article-img">
-          <a href="/site-MYF/about-us/report/2021/en/">
-            <img src="/site-MYF/about-us/report/images/thumb.jpg" width="440px" height="247px" alt="" />
-          </a>
-        </figure>
-      </div>
+  <div class="c-main-visual">
+    <div class="c-main-visual__wrap">
+      <img class="c-main-visual__image" src="/site-MYF/blog/article/2022/0305/images/entertaiment_01.png" width="800px" height="450px" alt="" />
     </div>
-    <!-- 2021 end -->
+  </div>
 
-  </section>
+
+
+  <!-- highcharts -->
+  <figure class="highcharts-figure">
+    <div id="chart_01"></div>
+    <!-- <p class="highcharts-description">
+      Pie chart where the individual slices can be clicked to expose more
+      detailed data.
+    </p> -->
+  </figure>
+
+
+  <div class="c-article">
+    <div class="c-article--wrap">
+      <h1 class="c-article__title">School events with local people.</h1>
+      <p class="c-article__text">
+        Monphy Educational Complex School Entertainment day.<br>
+        Parents, PTA, School Directors & Staff including local people Attend to witness the children’s performance improving socially and academically.
+      </p>
+    </div>
+
+  </div>
 
 
   <!-- #footerに共通部分は別ファイルで呼び出す -->
@@ -70,6 +78,10 @@
   </div>
 
   <script src="/site-MYF/project/en/js/main.js"></script>
+
+  <!-- highcharts config -->
+  <script src="/site-MYF/about-us/report/2021/js/chart_01.js"></script>
+
 </body>
 
 </html>
