@@ -3,7 +3,7 @@ Highcharts.chart('chart_02', {
     type: 'pie'
   },
   title: {
-    text: '団体運営費 募金割合グラフ 2021'
+    text: 'Group Operating Expense Donation Ratio Graph 2021'
   },
   subtitle: {
     text: ''
@@ -34,19 +34,19 @@ Highcharts.chart('chart_02', {
 
   series: [
     {
-      name: "ご寄付活用項目",
+      name: "Donation",
       colorByPoint: true,
       data: [
         {
-          name: "募金",
+          name: "Fund Raising",
           y: 63.52,
         },
         {
-          name: "メンバーシップ",
+          name: "Member Ship",
           y: 18.92,
         },
         {
-          name: "送金・振り込み",
+          name: "Bank Transfer",
           y: 17.59,
         },
       ]

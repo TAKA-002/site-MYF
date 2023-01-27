@@ -3,7 +3,7 @@ Highcharts.chart('chart_01', {
     type: 'pie'
   },
   title: {
-    text: '団体運営費 支出割合グラフ 2021'
+    text: 'Group Operating Expense Expenditure Ratio Graph 2021'
   },
   subtitle: {
     text: ''
@@ -34,47 +34,43 @@ Highcharts.chart('chart_01', {
 
   series: [
     {
-      name: "ご寄付活用項目",
+      name: "Donation Utilization",
       colorByPoint: true,
       data: [
         {
-          name: "日本募金活動費",
+          name: "Fundraiser",
           y: 20.46,
         },
         {
-          name: "事務所賃貸費用",
+          name: "Office Rental Cost",
           y: 15.02,
         },
         {
-          name: "事務所賃貸費用",
-          y: 15.02,
-        },
-        {
-          name: "募金活動使用機材購入費",
+          name: "Activity Materials",
           y: 13.49,
         },
         {
-          name: "現地学校トイレ施設建設費",
+          name: "Toilet Construction Cost",
           y: 12.98,
         },
         {
-          name: "学生奨学金",
+          name: "Scholarship",
           y: 11.20,
         },
         {
-          name: "現地学校スタッフ給与",
+          name: "School Staff Salary",
           y: 10.87,
         },
         {
-          name: "保険関連費",
+          name: "Insurance Cost",
           y: 4.83,
         },
         {
-          name: "インターネットサーバー・通信関連費",
+          name: "Server・Communication Cost",
           y: 3.86,
         },
         {
-          name: "その他",
+          name: "Others",
           y: 6.94,
         }
       ]
