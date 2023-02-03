@@ -1,35 +1,36 @@
-Highcharts.chart('chart_01', {
+Highcharts.chart("chart_01", {
   chart: {
-    type: 'pie'
+    type: "pie",
   },
   title: {
-    text: 'Group Operating Expense Expenditure Ratio Graph 2021'
+    text: "Group Operating Expense Expenditure Ratio Graph 2021",
   },
   subtitle: {
-    text: ''
+    text: "",
   },
 
   accessibility: {
     announceNewData: {
-      enabled: true
+      enabled: true,
     },
     point: {
-      valueSuffix: '%'
-    }
+      valueSuffix: "%",
+    },
   },
 
   plotOptions: {
     series: {
       dataLabels: {
         enabled: true,
-        format: '{point.name}: {point.y:.1f}%'
-      }
-    }
+        format: "{point.name}: {point.y:.1f}%",
+      },
+    },
   },
 
   tooltip: {
     headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+    pointFormat:
+      '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>',
   },
 
   series: [
@@ -38,42 +39,30 @@ Highcharts.chart('chart_01', {
       colorByPoint: true,
       data: [
         {
-          name: "Fundraiser",
-          y: 20.46,
+          name: "School Feeding Program Support",
+          y: 36.82,
         },
         {
-          name: "Office Rental Cost",
-          y: 15.02,
+          name: "Office Rent & Bills",
+          y: 13.67,
         },
         {
-          name: "Activity Materials",
-          y: 13.49,
-        },
-        {
-          name: "Toilet Construction Cost",
-          y: 12.98,
+          name: "Donated Items Shipment",
+          y: 13.04,
         },
         {
           name: "Scholarship",
-          y: 11.20,
+          y: 7.36,
         },
         {
-          name: "School Staff Salary",
-          y: 10.87,
-        },
-        {
-          name: "Insurance Cost",
-          y: 4.83,
-        },
-        {
-          name: "Server・Communication Cost",
-          y: 3.86,
+          name: "Constructing Toilet & Library & Computer Room",
+          y: 5.29,
         },
         {
           name: "Others",
-          y: 6.94,
-        }
-      ]
-    }
+          y: 23.82,
+        },
+      ],
+    },
   ],
 });
