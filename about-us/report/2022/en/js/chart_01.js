@@ -39,28 +39,28 @@ Highcharts.chart("chart_01", {
       colorByPoint: true,
       data: [
         {
-          name: "School Feeding Program Support",
-          y: 36.82,
-        },
-        {
-          name: "Office Rent & Bills",
-          y: 13.67,
-        },
-        {
-          name: "Donated Items Shipment",
-          y: 13.04,
-        },
-        {
           name: "Scholarship",
-          y: 7.36,
+          y: 17.93,
         },
         {
-          name: "Constructing Toilet & Library & Computer Room",
-          y: 5.29,
+          name: "Ghana & Japan NGO Staffs & Teaches Wages",
+          y: 14.94,
+        },
+        {
+          name: "School Bus Fuel and Parking",
+          y: 11.74,
+        },
+        {
+          name: "School Feeding Program",
+          y: 10.67,
+        },
+        {
+          name: "Constructing Toilet, Library & Computer Room",
+          y: 10.03,
         },
         {
           name: "Others",
-          y: 23.82,
+          y: 34.69,
         },
       ],
     },
