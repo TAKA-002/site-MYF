@@ -39,28 +39,24 @@ Highcharts.chart("chart_01", {
       colorByPoint: true,
       data: [
         {
-          name: "Scholarship",
-          y: 17.93,
+          name: "EDUCATION & SCHOLARSHIPS",
+          y: 36.88,
         },
         {
-          name: "Ghana & Japan NGO Staffs & Teaches Wages",
-          y: 14.94,
+          name: "NGO EXPENSES：MANAGEMENT &DOCUMENTATION",
+          y: 32.18,
         },
         {
-          name: "School Bus Fuel and Parking",
-          y: 11.74,
+          name: "NGO STAFFS ALLOWANCE",
+          y: 16.6,
         },
         {
-          name: "School Feeding Program",
-          y: 10.67,
+          name: "SCHOOL CONSTRUCTION",
+          y: 12.23,
         },
         {
-          name: "Constructing Toilet, Library & Computer Room",
-          y: 10.03,
-        },
-        {
-          name: "Others",
-          y: 34.69,
+          name: "DONATED GOODS & ITEMS",
+          y: 2.11,
         },
       ],
     },
