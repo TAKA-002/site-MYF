@@ -3,7 +3,7 @@ Highcharts.chart("chart_01", {
     type: "pie",
   },
   title: {
-    text: "団体運営費 支出割合グラフ 2022",
+    text: "活動費用支出比率グラフ2022",
   },
   subtitle: {
     text: "",
@@ -35,32 +35,28 @@ Highcharts.chart("chart_01", {
 
   series: [
     {
-      name: "ご寄付活用項目",
+      name: "支出比率",
       colorByPoint: true,
       data: [
         {
-          name: "奨学金",
-          y: 17.93,
+          name: "学校教育支援",
+          y: 36.88,
         },
         {
-          name: "スタッフ・学校教師賃金",
-          y: 14.94,
+          name: "NGO運営諸経費",
+          y: 32.18,
         },
         {
-          name: "スクールバスの燃料と駐車場",
-          y: 11.74,
+          name: "活動費用",
+          y: 16.6,
         },
         {
-          name: "学校給食プログラム",
-          y: 10.67,
+          name: "学校建設支援",
+          y: 12.23,
         },
         {
-          name: "トイレ・図書室・パソコン室建設",
-          y: 10.03,
-        },
-        {
-          name: "その他合計",
-          y: 34.69,
+          name: "支援物資対応",
+          y: 2.11,
         },
       ],
     },

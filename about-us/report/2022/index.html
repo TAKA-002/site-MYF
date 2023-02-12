@@ -51,16 +51,41 @@
       width: calc(100% / 3);
       padding: 10px;
       text-align: center;
+    }
+
+    .report-table.expense th {
+      border-bottom: solid 4px #a3879c;
+      color: #a3879c;
+    }
+
+    .report-table.income th {
       border-bottom: solid 4px #778ca3;
-      color: #778ca3
+      color: #778ca3;
+    }
+
+    .report-table.balance th {
+      border-bottom: solid 4px #a573bd;
+      color: #a573bd;
     }
 
     .report-table td {
-      font-size: 14px;
+      font-size: 16px;
       vertical-align: middle;
       padding: 10px;
+    }
+
+    .report-table.expense td {
+      border-bottom: solid 1px #a3879c;
+    }
+
+    .report-table.income td {
       border-bottom: solid 1px #778ca3;
     }
+
+    .report-table.balance td {
+      border-bottom: solid 1px #a573bd;
+    }
+
 
     .highcharts-figure {
       margin-top: 50px;
@@ -87,148 +112,189 @@
       <h1 class="c-article__title">2022年の報告をさせていただきます。</h1>
 
       <div class="report">
-        <table class="report-table">
-          <!-- expence -->
+
+        <!-- EDUCATION -->
+        <table class="report-table expense">
           <tr>
-            <th>ご寄付活用項目</th>
+            <th>寄付活用：学校教育支援</th>
             <th>金額（単位：¥）</th>
-            <th>割合（単位：% 小数点第2位）</th>
           </tr>
 
           <tr>
             <td>奨学金</td>
-            <td>420,000</td>
-            <td>17.93</td>
+            <td>320,000</td>
           </tr>
 
           <tr>
-            <td>スタッフ・学校教師賃金</td>
-            <td>350,000</td>
-            <td>14.94</td>
-          </tr>
-
-          <tr>
-            <td>スクールバスの燃料と駐車場</td>
-            <td>275,000</td>
-            <td>11.74</td>
-          </tr>
-
-          <tr>
-            <td>学校給食プログラム</td>
-            <td>250,000</td>
-            <td>10.67</td>
-          </tr>
-
-          <tr>
-            <td>トイレ・図書室・パソコン室建設</td>
-            <td>235,000</td>
-            <td>10.03</td>
-          </tr>
-
-          <tr>
-            <td>スクールバス:メンテナンスと修理</td>
-            <td>210,000</td>
-            <td>8.96</td>
-          </tr>
-
-          <tr>
-            <td>スクールバス保険</td>
-            <td>175,800</td>
-            <td>7.50</td>
+            <td>学校教師賃金</td>
+            <td>200,700</td>
           </tr>
 
           <tr>
             <td>学校発電機（ディーゼル）</td>
-            <td>105,000</td>
-            <td>4.48</td>
+            <td>30,800</td>
           </tr>
 
           <tr>
-            <td>学校 土地税金</td>
-            <td>55,000</td>
-            <td>2.34</td>
+            <td>スクールバス燃料費等</td>
+            <td>121,500</td>
           </tr>
 
           <tr>
-            <td>会計監査料</td>
-            <td>45,000</td>
-            <td>1.92</td>
+            <td>保険・医療費</td>
+            <td>50,160</td>
           </tr>
 
           <tr>
-            <td>通信費</td>
-            <td>43,000</td>
-            <td>1.83</td>
+            <td>印刷物・文具</td>
+            <td>15,430</td>
           </tr>
 
           <tr>
-            <td>道路使用許可</td>
+            <td>合計</td>
+            <td>913,590</td>
+          </tr>
+
+        </table>
+
+        <!-- SCHOOL CONSTRUCT -->
+        <table class="report-table expense">
+          <tr>
+            <th>寄付活用：学校建設支援</th>
+            <th>金額（単位：¥）</th>
+          </tr>
+
+          <tr>
+            <td>トイレ・図書室・コンピュータールーム建設費</td>
+            <td>240,040</td>
+          </tr>
+
+          <tr>
+            <td>土地とリース</td>
+            <td>63,000</td>
+          </tr>
+
+          <tr>
+            <td>合計</td>
+            <td>303,040</td>
+          </tr>
+
+        </table>
+
+        <!-- NGO Ghana & Japan Staffs Allowance -->
+        <table class="report-table expense">
+          <tr>
+            <th>寄付活用：活動費用</th>
+            <th>金額（単位：¥）</th>
+          </tr>
+
+          <tr>
+            <td>ガーナ・日本活動スタッフ手当</td>
+            <td>411,200</td>
+          </tr>
+
+          <tr>
+            <td>合計</td>
+            <td>411,200</td>
+          </tr>
+
+        </table>
+
+        <!-- NGO EXPENSES -->
+        <table class="report-table expense">
+          <tr>
+            <th>寄付活用：NGO運営諸経費</th>
+            <th>金額（単位：¥）</th>
+          </tr>
+
+          <tr>
+            <td>運営費</td>
+            <td>15,000</td>
+          </tr>
+
+          <tr>
+            <td>文書作成費</td>
+            <td>30,000</td>
+          </tr>
+
+          <tr>
+            <td>警察道路使用許可</td>
             <td>42,000</td>
-            <td>1,79</td>
           </tr>
 
           <tr>
-            <td>学生・職員医療費</td>
-            <td>38,000</td>
-            <td>1.62</td>
-          </tr>
-
-          <tr>
-            <td>減価償却費</td>
-            <td>35,000</td>
-            <td>1.49</td>
-          </tr>
-
-          <tr>
-            <td>パンフレット</td>
-            <td>32,000</td>
-            <td>1.36</td>
-          </tr>
-
-          <tr>
-            <td>印刷・文具</td>
-            <td>15,500</td>
-            <td>0.66</td>
+            <td>通信費（インターネットサーバー維持費・電話等）</td>
+            <td>62,210</td>
           </tr>
 
           <tr>
             <td>銀行手数料</td>
             <td>15,000</td>
-            <td>0.64</td>
+          </tr>
+
+          <tr>
+            <td>事務所賃料</td>
+            <td>530,000</td>
+          </tr>
+
+          <tr>
+            <td>会計・監査費</td>
+            <td>40,000</td>
+          </tr>
+
+
+          <tr>
+            <td>NGO証明書更新費</td>
+            <td>63,020</td>
           </tr>
 
           <tr>
             <td>合計</td>
-            <td>2,341,300</td>
-            <td>-</td>
+            <td>797,230</td>
+          </tr>
+
+        </table>
+
+        <!-- DONATED GOOD & ITEMS -->
+        <table class="report-table expense">
+          <tr>
+            <th>寄付活用：支援物資対応</th>
+            <th>金額（単位：¥）</th>
+          </tr>
+
+          <tr>
+            <td>出荷と通関、輸送と流通</td>
+            <td>52,320</td>
+          </tr>
+
+          <tr>
+            <td>合計</td>
+            <td>52,320</td>
           </tr>
 
         </table>
 
         <!-- income -->
-        <table class="report-table">
+        <table class="report-table income">
 
           <tr>
             <th>ご寄付項目</th>
             <th>金額（単位：¥）</th>
-            <th>割合（単位：% 小数点第2位）</th>
           </tr>
 
           <tr>
-            <td>募金</td>
+            <td>募金・送金等ご寄付</td>
             <td>2,340,720</td>
-            <td>100</td>
           </tr>
 
           <tr>
             <td>合計</td>
             <td>2,340,720</td>
-            <td>-</td>
           </tr>
 
         </table>
 
-        <table class="report-table">
+        <table class="report-table balance">
 
           <tr>
             <th>収入合計</th>
@@ -238,8 +304,8 @@
 
           <tr>
             <td>2,340,720</td>
-            <td>2,341,300</td>
-            <td>- 580</td>
+            <td>2,477,380</td>
+            <td>- 136,660</td>
           </tr>
 
         </table>
@@ -247,9 +313,6 @@
         <!-- highcharts -->
         <figure class="highcharts-figure">
           <div id="chart_01"></div>
-        </figure>
-        <figure class="highcharts-figure">
-          <div id="chart_02"></div>
         </figure>
 
       </div>

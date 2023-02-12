@@ -3,7 +3,7 @@ Highcharts.chart("chart_01", {
     type: "pie",
   },
   title: {
-    text: "Group Operating Expense Expenditure Ratio Graph 2021",
+    text: "Expenditure Cost Ratio Graph 2022",
   },
   subtitle: {
     text: "",
