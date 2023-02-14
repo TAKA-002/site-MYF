@@ -5,17 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2021年 | 年次会計報告 | マンフィーと青年基金NGO</title>
+  <title>年次会計報告 2021 | マンフィーと青年基金NGO</title>
   <meta name="keywords" content="NGO,Ghana,monphy,ボランティア,ガーナ,マンフィー" />
   <meta name="description"
         content="私たち、マンフィーと青年基金 は皆さまの寄付や募金でガーナ共和国の貧困層に衣類や日用品の配布、小学校の建設などをおこなっています。Monphy &amp;amp;amp; Youth Foundation NGO マンフィーと青年基金" />
-  <meta property="og:title" content="地域の方々との学校行事 | ブログ | マンフィーと青年基金NGO" />
+  <meta property="og:title" content="年次会計報告 2021 | マンフィーと青年基金NGO" />
   <meta property="og:description"
         content="私たち、マンフィーと青年基金 は皆さまの寄付や募金でガーナ共和国の貧困層に衣類や日用品の配布、小学校の建設などをおこなっています。Monphy &amp;amp;amp; Youth Foundation NGO マンフィーと青年基金" />
 
   <!-- <meta property="og:url" content="ページの URL" /> -->
   <!-- <meta property="og:image" content="サムネイル画像の URL" /> -->
-  <meta property="og:site_name" content="地域の方々との学校行事 | ブログ | マンフィーと青年基金NGO" />
+  <meta property="og:site_name" content="年次会計報告 2021 | マンフィーと青年基金NGO" />
   <meta property="og:locale" content="ja_JP" />
 
   <link rel="shortcut icon" type="image/x-icon" href="http://test.miu-parts.work/MYF/images/common/favicon.ico" />
@@ -51,16 +51,41 @@
       width: calc(100% / 3);
       padding: 10px;
       text-align: center;
+    }
+
+    .report-table.expense th {
+      border-bottom: solid 4px #a3879c;
+      color: #a3879c;
+    }
+
+    .report-table.income th {
       border-bottom: solid 4px #778ca3;
-      color: #778ca3
+      color: #778ca3;
+    }
+
+    .report-table.balance th {
+      border-bottom: solid 4px #a573bd;
+      color: #a573bd;
     }
 
     .report-table td {
-      font-size: 14px;
+      font-size: 16px;
       vertical-align: middle;
       padding: 10px;
+    }
+
+    .report-table.expense td {
+      border-bottom: solid 1px #a3879c;
+    }
+
+    .report-table.income td {
       border-bottom: solid 1px #778ca3;
     }
+
+    .report-table.balance td {
+      border-bottom: solid 1px #a573bd;
+    }
+
 
     .highcharts-figure {
       margin-top: 50px;
@@ -87,12 +112,12 @@
       <h1 class="c-article__title">2021年の報告をさせていただきます。</h1>
 
       <div class="report">
-        <table class="report-table">
-          <!-- expence -->
+
+        <!-- EDUCATION -->
+        <table class="report-table expense">
           <tr>
             <th>ご寄付活用項目</th>
             <th>金額（単位：¥）</th>
-            <th>割合（単位：% 小数点第2位）</th>
           </tr>
 
           <tr>
@@ -274,9 +299,6 @@
         <figure class="highcharts-figure">
           <div id="chart_01"></div>
         </figure>
-        <figure class="highcharts-figure">
-          <div id="chart_02"></div>
-        </figure>
 
       </div>
     </div>
@@ -297,7 +319,6 @@
 
   <!-- highcharts config -->
   <script src="/site-MYF/about-us/report/2021/js/chart_01.js"></script>
-  <script src="/site-MYF/about-us/report/2021/js/chart_02.js"></script>
 </body>
 
 </html>
