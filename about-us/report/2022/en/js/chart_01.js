@@ -43,7 +43,7 @@ Highcharts.chart("chart_01", {
           y: 36.88,
         },
         {
-          name: "NGO EXPENSES：MANAGEMENT &DOCUMENTATION",
+          name: "MANAGEMENT & DOCUMENTATION",
           y: 32.18,
         },
         {
