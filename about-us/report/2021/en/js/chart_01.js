@@ -39,28 +39,24 @@ Highcharts.chart("chart_01", {
       colorByPoint: true,
       data: [
         {
-          name: "School Feeding Program Support",
-          y: 36.82,
+          name: "EDUCATION & SCHOLARSHIPS",
+          y: 35.5,
         },
         {
-          name: "Office Rent & Bills",
-          y: 13.67,
+          name: "CONTAINER SHIPMENT",
+          y: 23.44,
         },
         {
-          name: "Donated Items Shipment",
-          y: 13.04,
+          name: "NGO MANAGEMENT & DOCUMENTATION",
+          y: 20.79,
         },
         {
-          name: "Scholarship",
-          y: 7.36,
+          name: "NGO STAFFS ALLOWANCE",
+          y: 10.86,
         },
         {
-          name: "Constructing Toilet & Library & Computer Room",
-          y: 5.29,
-        },
-        {
-          name: "Others",
-          y: 23.82,
+          name: "SCHOOL CONSTRUCTION & LAND LEASE",
+          y: 9.38,
         },
       ],
     },
